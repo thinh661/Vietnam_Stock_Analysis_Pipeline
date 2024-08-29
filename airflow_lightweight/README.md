@@ -1,13 +1,17 @@
 # Airflow-ENV-Docker-for-MINIO-TRINO
 
-## Setup Airflow 
+## Setup Airflow
 
-First, clone my project to local:
+
+`Warning`: You need to set up MinIO-Trino env for the first. Airflow second and Superset last.
+
+
+First, clone my project to local: (If you have already downloaded the repository containing the three services, there is no need to clone this project. )
 ```bash
 git clone https://github.com/thinh661/airflow_lightweight_docker_env
 ```
 
-Build image (if you update pakage Python enviroment):
+Build image (for the first build or if you update pakage Python enviroment):
 ``` bash
 docker image build
 ```
@@ -23,8 +27,8 @@ docker-compose up
 Run airflow UI on port 8080 : `http://locahost:8088`
 Login with:
 ```
-admin : admin
-password : admin
+admin : airflow
+password : airflow
 ```
 
 ## Connect TRINO-MINIO
@@ -45,6 +49,7 @@ We'll connect the Trino conections:
 1. Airflow WebUI has a few examples I've done before and you can see it. U can run it (some DAG must trigger to run) to understand the flow if u has the [TRINO-MINIO_DOCKER](https://github.com/thinh661/minio_trino_docker_evn.git) eviroment I'm deployed.
 2. In `dags` folder, has a few examples, and you can deverlop it by add DAG python file
 
+![airflow_img](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/pipeline_architecture.png)
 ## END
 
 
