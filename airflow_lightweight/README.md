@@ -49,7 +49,7 @@ We'll connect the Trino conections:
 1. Airflow WebUI has a few examples I've done before and you can see it. U can run it (some DAG must trigger to run) to understand the flow if u has the [TRINO-MINIO_DOCKER](https://github.com/thinh661/minio_trino_docker_evn.git) eviroment I'm deployed.
 2. In `dags` folder, has a few examples, and you can deverlop it by add DAG python file
 
-![airflow_img](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/pipeline_architecture.png)
+![airflow_img](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/airflow_webUI.png)
 ## END
 
 
