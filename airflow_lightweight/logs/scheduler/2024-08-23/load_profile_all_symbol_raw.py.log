@@ -1,0 +1,98 @@
+[2024-08-23T03:16:50.229+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:16:50.231+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:16:50.234+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:50.233+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:16:51.731+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:16:51.899+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:51.898+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:16:51.913+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:51.912+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:16:51.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.711 seconds
+[2024-08-23T03:17:22.580+0000] {processor.py:161} INFO - Started process (PID=296) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:22.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:17:22.585+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:22.584+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:24.246+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:24.284+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:24.284+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:17:24.301+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:24.301+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:17:24.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.753 seconds
+[2024-08-23T03:17:55.347+0000] {processor.py:161} INFO - Started process (PID=393) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:55.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:17:55.351+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:55.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:57.463+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:17:57.496+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:57.495+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:17:57.510+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:57.510+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:17:57.537+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 2.195 seconds
+[2024-08-23T03:18:27.914+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:18:27.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:18:27.919+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:27.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:18:29.954+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:18:29.983+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:29.982+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:18:29.998+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:29.998+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:18:30.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 2.119 seconds
+[2024-08-23T03:19:00.845+0000] {processor.py:161} INFO - Started process (PID=596) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:00.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:19:00.852+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:00.852+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:02.792+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:02.828+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:02.827+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:19:02.845+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:02.845+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:19:02.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 2.040 seconds
+[2024-08-23T03:19:33.481+0000] {processor.py:161} INFO - Started process (PID=678) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:33.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:19:33.486+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:33.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:35.073+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:19:35.105+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:35.104+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:19:35.120+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:35.119+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:19:35.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.674 seconds
+[2024-08-23T03:20:05.680+0000] {processor.py:161} INFO - Started process (PID=774) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:05.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:20:05.683+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:05.683+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:06.997+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:07.025+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:07.025+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:20:07.041+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:07.041+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:20:07.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.392 seconds
+[2024-08-23T03:20:37.986+0000] {processor.py:161} INFO - Started process (PID=858) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:37.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:20:37.989+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:37.989+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:39.365+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:20:39.397+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:39.397+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:20:39.411+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:39.411+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:20:39.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.456 seconds
+[2024-08-23T03:21:09.975+0000] {processor.py:161} INFO - Started process (PID=952) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:09.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:21:09.980+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:09.979+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:11.499+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:11.531+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:11.530+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:21:11.544+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:11.544+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:21:11.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.640 seconds
+[2024-08-23T03:21:42.182+0000] {processor.py:161} INFO - Started process (PID=1034) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:42.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:21:42.185+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:42.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:43.676+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:21:43.711+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:43.711+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:21:43.727+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:43.727+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:21:43.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.574 seconds
+[2024-08-23T03:22:15.265+0000] {processor.py:161} INFO - Started process (PID=1130) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:15.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:22:15.270+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:15.270+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:17.142+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:17.170+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:17.169+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:22:17.184+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:17.183+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:22:17.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.954 seconds
+[2024-08-23T03:22:47.700+0000] {processor.py:161} INFO - Started process (PID=1211) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:47.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:22:47.704+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:47.703+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:49.011+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:22:49.039+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:49.038+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:22:49.051+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:49.050+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:22:49.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.381 seconds
+[2024-08-23T03:23:19.908+0000] {processor.py:161} INFO - Started process (PID=1294) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:19.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:23:19.912+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:19.912+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:21.155+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:21.191+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:21.191+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:23:21.206+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:21.206+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:23:21.225+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.325 seconds
+[2024-08-23T03:23:51.793+0000] {processor.py:161} INFO - Started process (PID=1390) to work on /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:51.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_profile_all_symbol_raw.py for tasks to queue
+[2024-08-23T03:23:51.798+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:51.798+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:53.058+0000] {processor.py:840} INFO - DAG(s) 'update_company_profiles_in_s3_year_123' retrieved from /opt/airflow/dags/load_profile_all_symbol_raw.py
+[2024-08-23T03:23:53.085+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:53.085+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:23:53.096+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:53.096+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_profiles_in_s3_year_123 to None, run_after=None
+[2024-08-23T03:23:53.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_profile_all_symbol_raw.py took 1.332 seconds

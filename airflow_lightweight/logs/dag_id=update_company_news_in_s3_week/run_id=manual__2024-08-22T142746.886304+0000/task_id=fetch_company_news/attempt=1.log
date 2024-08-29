@@ -1,0 +1,305 @@
+[2024-08-22T14:27:53.790+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-22T14:27:53.816+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_company_news_in_s3_week.fetch_company_news manual__2024-08-22T14:27:46.886304+00:00 [queued]>
+[2024-08-22T14:27:53.828+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_company_news_in_s3_week.fetch_company_news manual__2024-08-22T14:27:46.886304+00:00 [queued]>
+[2024-08-22T14:27:53.829+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-22T14:27:53.840+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_company_news> on 2024-08-22 14:27:46.886304+00:00
+[2024-08-22T14:27:53.848+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=16763) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-22T14:27:53.849+0000] {standard_task_runner.py:64} INFO - Started process 16772 to run task
+[2024-08-22T14:27:53.848+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_company_news_in_s3_week', 'fetch_company_news', 'manual__2024-08-22T14:27:46.886304+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/load_news_raw.py', '--cfg-path', '/tmp/tmp0ei5sase']
+[2024-08-22T14:27:53.851+0000] {standard_task_runner.py:91} INFO - Job 62: Subtask fetch_company_news
+[2024-08-22T14:27:53.903+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-08-22T14:27:53.943+0000] {task_command.py:426} INFO - Running <TaskInstance: update_company_news_in_s3_week.fetch_company_news manual__2024-08-22T14:27:46.886304+00:00 [running]> on host fa4e08fee2f6
+[2024-08-22T14:27:54.113+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_company_news_in_s3_week' AIRFLOW_CTX_TASK_ID='fetch_company_news' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T14:27:46.886304+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T14:27:46.886304+00:00'
+[2024-08-22T14:27:54.115+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-22T14:28:35.839+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:35,832 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BLN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:35.854+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BLN: 'listActivityNews'
+[2024-08-22T14:28:36.236+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:36,236 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:36.237+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BLT: 'listActivityNews'
+[2024-08-22T14:28:36.544+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:36,543 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BLW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:36.544+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BLW: 'listActivityNews'
+[2024-08-22T14:28:36.878+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:36,878 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:36.880+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMC: 'listActivityNews'
+[2024-08-22T14:28:37.194+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:37,193 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:37.195+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMD: 'listActivityNews'
+[2024-08-22T14:28:37.519+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:37,519 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:37.520+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMF: 'listActivityNews'
+[2024-08-22T14:28:38.079+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:38,079 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:38.080+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMG: 'listActivityNews'
+[2024-08-22T14:28:38.537+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:38,537 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:38.538+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMI: 'listActivityNews'
+[2024-08-22T14:28:38.899+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:38,899 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:38.900+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMJ: 'listActivityNews'
+[2024-08-22T14:28:39.214+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:39,214 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:39.215+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMN: 'listActivityNews'
+[2024-08-22T14:28:39.534+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:39,534 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:39.536+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMP: 'listActivityNews'
+[2024-08-22T14:28:39.846+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:39,845 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:39.847+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMS: 'listActivityNews'
+[2024-08-22T14:28:40.168+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:40,167 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BMV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:40.168+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BMV: 'listActivityNews'
+[2024-08-22T14:28:40.502+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:40,502 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:40.502+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BNA: 'listActivityNews'
+[2024-08-22T14:28:40.838+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:40,837 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BNW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:40.838+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BNW: 'listActivityNews'
+[2024-08-22T14:28:41.142+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:41,142 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BOT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:41.143+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BOT: 'listActivityNews'
+[2024-08-22T14:28:41.462+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:41,462 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:41.463+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BPC: 'listActivityNews'
+[2024-08-22T14:28:41.824+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:41,823 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BQB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:41.824+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BQB: 'listActivityNews'
+[2024-08-22T14:28:42.195+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:42,195 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:42.196+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BRC: 'listActivityNews'
+[2024-08-22T14:28:42.545+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:42,545 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BRR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:42.546+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BRR: 'listActivityNews'
+[2024-08-22T14:28:42.891+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:42,891 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BRS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:42.892+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BRS: 'listActivityNews'
+[2024-08-22T14:28:43.324+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:43,324 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:43.325+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSA: 'listActivityNews'
+[2024-08-22T14:28:43.643+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:43,643 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:43.643+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSC: 'listActivityNews'
+[2024-08-22T14:28:43.978+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:43,978 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:43.980+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSD: 'listActivityNews'
+[2024-08-22T14:28:53.772+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:53,772 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:53.773+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSG: 'listActivityNews'
+[2024-08-22T14:28:54.126+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:54,126 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:54.127+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSH: 'listActivityNews'
+[2024-08-22T14:28:54.575+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:54,575 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:54.576+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSI: 'listActivityNews'
+[2024-08-22T14:28:55.322+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:55,322 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:55.323+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSL: 'listActivityNews'
+[2024-08-22T14:28:55.659+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:55,659 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:55.660+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSP: 'listActivityNews'
+[2024-08-22T14:28:55.998+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:55,998 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSQ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:55.999+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSQ: 'listActivityNews'
+[2024-08-22T14:28:56.340+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:56,340 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BSR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:56.341+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BSR: 'listActivityNews'
+[2024-08-22T14:28:56.687+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:56,687 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BST. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:56.688+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BST: 'listActivityNews'
+[2024-08-22T14:28:57.025+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:57,025 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BT1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:57.026+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BT1: 'listActivityNews'
+[2024-08-22T14:28:57.397+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:57,397 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BT6. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:57.398+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BT6: 'listActivityNews'
+[2024-08-22T14:28:57.821+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:57,821 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BTB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:57.822+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BTB: 'listActivityNews'
+[2024-08-22T14:28:58.159+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:58,158 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BTD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:58.160+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BTD: 'listActivityNews'
+[2024-08-22T14:28:58.499+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:58,498 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:58.499+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BTG: 'listActivityNews'
+[2024-08-22T14:28:59.169+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:59,169 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BTH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:59.170+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BTH: 'listActivityNews'
+[2024-08-22T14:28:59.550+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:28:59,549 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for BTN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:28:59.550+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho BTN: 'listActivityNews'
+[2024-08-22T14:30:51.438+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:51,438 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:51.440+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNA: 'listActivityNews'
+[2024-08-22T14:30:51.773+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:51,773 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:51.773+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNC: 'listActivityNews'
+[2024-08-22T14:30:52.131+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:52,131 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DND. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:52.132+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DND: 'listActivityNews'
+[2024-08-22T14:30:52.451+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:52,451 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:52.452+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNE: 'listActivityNews'
+[2024-08-22T14:30:52.880+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:52,880 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:52.881+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNH: 'listActivityNews'
+[2024-08-22T14:30:53.786+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:53,786 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:53.787+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNL: 'listActivityNews'
+[2024-08-22T14:30:54.164+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:54,164 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:54.164+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNM: 'listActivityNews'
+[2024-08-22T14:30:54.511+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:54,511 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:54.512+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNN: 'listActivityNews'
+[2024-08-22T14:30:54.871+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:54,871 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:54.872+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNP: 'listActivityNews'
+[2024-08-22T14:30:55.195+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:55,195 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:55.196+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNT: 'listActivityNews'
+[2024-08-22T14:30:55.559+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:55,559 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DNW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:55.562+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DNW: 'listActivityNews'
+[2024-08-22T14:30:55.923+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:55,922 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DOC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:55.924+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DOC: 'listActivityNews'
+[2024-08-22T14:30:56.266+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:56,266 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DOP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:56.267+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DOP: 'listActivityNews'
+[2024-08-22T14:30:56.584+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:56,584 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DP1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:56.585+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DP1: 'listActivityNews'
+[2024-08-22T14:30:56.981+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:56,981 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DP2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:56.982+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DP2: 'listActivityNews'
+[2024-08-22T14:30:57.339+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:57,339 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DP3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:57.339+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DP3: 'listActivityNews'
+[2024-08-22T14:30:57.689+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:57,689 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:57.689+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DPC: 'listActivityNews'
+[2024-08-22T14:30:58.028+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:58,027 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DPG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:58.029+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DPG: 'listActivityNews'
+[2024-08-22T14:30:58.365+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:58,365 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:58.365+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DPH: 'listActivityNews'
+[2024-08-22T14:30:58.702+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:58,702 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DPM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:58.703+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DPM: 'listActivityNews'
+[2024-08-22T14:30:59.034+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:30:59,034 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for DPP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:30:59.034+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho DPP: 'listActivityNews'
+[2024-08-22T14:31:56.779+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:56,779 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GEG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:56.780+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GEG: 'listActivityNews'
+[2024-08-22T14:31:57.114+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:57,114 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GER. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:57.115+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GER: 'listActivityNews'
+[2024-08-22T14:31:57.479+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:57,479 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GEX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:57.480+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GEX: 'listActivityNews'
+[2024-08-22T14:31:57.857+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:57,857 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GGG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:57.858+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GGG: 'listActivityNews'
+[2024-08-22T14:31:58.421+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:58,421 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GH3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:58.421+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GH3: 'listActivityNews'
+[2024-08-22T14:31:58.753+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:58,753 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:58.754+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GHC: 'listActivityNews'
+[2024-08-22T14:31:59.105+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:59,105 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:59.106+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GIC: 'listActivityNews'
+[2024-08-22T14:31:59.414+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:31:59,414 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company news data for GIL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:31:59.415+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập tin tức cho GIL: 'listActivityNews'
+[2024-08-22T14:32:10.744+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/load_news_raw.py:79 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2024-08-22T14:32:10.803+0000] {python.py:237} INFO - Done. Returned value was:        rsi  rs    price  ...  source         publish_date  ticker
+0     51.5 NaN  34845.0  ...    TCBS  2024-08-16 08:49:00     A32
+1     52.3 NaN  34693.0  ...    TCBS  2024-08-09 10:53:00     A32
+2     71.5 NaN  37584.0  ...    TCBS  2024-08-07 15:43:00     A32
+3     71.5 NaN  37584.0  ...    TCBS  2024-08-07 15:42:00     A32
+4     71.5 NaN  37584.0  ...    TCBS  2024-08-07 10:44:00     A32
+...    ...  ..      ...  ...     ...                  ...     ...
+6475   0.0 NaN   1500.0  ...    TCBS  2024-05-15 14:41:00     HAI
+6476   0.0 NaN   1500.0  ...    TCBS  2024-05-15 14:34:00     HAI
+6477   0.0 NaN   1500.0  ...    TCBS  2024-04-15 16:32:00     HAI
+6478   0.0 NaN   1500.0  ...    TCBS  2024-04-15 16:31:00     HAI
+6479   0.0 NaN   1500.0  ...    TCBS  2024-03-29 14:50:00     HAI
+
+[6480 rows x 11 columns]
+[2024-08-22T14:32:10.886+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-22T14:32:11.111+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=update_company_news_in_s3_week, task_id=fetch_company_news, run_id=manual__2024-08-22T14:27:46.886304+00:00, execution_date=20240822T142746, start_date=20240822T142753, end_date=20240822T143211
+[2024-08-22T14:32:11.183+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-22T14:32:11.269+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-22T14:32:11.270+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

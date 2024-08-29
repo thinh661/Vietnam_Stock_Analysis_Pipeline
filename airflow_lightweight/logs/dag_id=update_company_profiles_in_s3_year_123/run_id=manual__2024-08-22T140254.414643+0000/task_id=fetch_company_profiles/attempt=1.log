@@ -1,0 +1,1479 @@
+[2024-08-22T14:03:01.347+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-22T14:03:01.486+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_company_profiles_in_s3_year_123.fetch_company_profiles manual__2024-08-22T14:02:54.414643+00:00 [queued]>
+[2024-08-22T14:03:01.498+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_company_profiles_in_s3_year_123.fetch_company_profiles manual__2024-08-22T14:02:54.414643+00:00 [queued]>
+[2024-08-22T14:03:01.499+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-22T14:03:01.513+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_company_profiles> on 2024-08-22 14:02:54.414643+00:00
+[2024-08-22T14:03:01.527+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=12695) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-22T14:03:01.526+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_company_profiles_in_s3_year_123', 'fetch_company_profiles', 'manual__2024-08-22T14:02:54.414643+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/load_profile_all_symbol_raw.py', '--cfg-path', '/tmp/tmp3rmu2tdj']
+[2024-08-22T14:03:01.529+0000] {standard_task_runner.py:91} INFO - Job 54: Subtask fetch_company_profiles
+[2024-08-22T14:03:01.529+0000] {standard_task_runner.py:64} INFO - Started process 12697 to run task
+[2024-08-22T14:03:01.547+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-08-22T14:03:01.595+0000] {task_command.py:426} INFO - Running <TaskInstance: update_company_profiles_in_s3_year_123.fetch_company_profiles manual__2024-08-22T14:02:54.414643+00:00 [running]> on host fa4e08fee2f6
+[2024-08-22T14:03:01.824+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_company_profiles_in_s3_year_123' AIRFLOW_CTX_TASK_ID='fetch_company_profiles' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T14:02:54.414643+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T14:02:54.414643+00:00'
+[2024-08-22T14:03:01.826+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-22T14:03:44.419+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:44,418 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BHN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:44.807+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:44,807 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BHP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:45.171+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:45,171 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:45.502+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:45,502 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:45.827+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:45,827 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BIG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:46.157+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:46,157 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BII. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:46.492+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:46,492 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BIO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:46.848+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:46,848 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BKC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:47.188+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:47,188 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BKG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:47.548+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:47,548 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BKH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:47.896+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:47,896 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BLF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:48.226+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:48,226 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BLI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:48.605+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:48,605 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BLN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:48.952+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:48,952 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:49.331+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:49,331 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BLW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:49.657+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:49,657 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:50.017+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:50,017 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:50.357+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:50,357 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:50.691+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:50,691 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:51.045+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:51,045 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:51.397+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:51,396 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:51.714+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:51,714 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:52.060+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:52,060 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:52.423+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:52,423 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:52.867+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:52,867 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BMV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:53.215+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:53,215 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:53.531+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:53,531 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BNW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:53.858+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:53,858 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BOT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:54.194+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:54,194 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:54.594+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:54,594 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BQB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:54.927+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:54,926 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:55.274+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:55,274 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BRR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:55.601+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:55,601 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BRS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:55.927+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:55,927 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:56.316+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:56,316 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:56.678+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:56,678 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:57.057+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:57,057 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:57.399+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:57,399 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:57.761+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:57,761 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:58.109+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:58,109 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:58.431+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:58,430 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:58.741+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:58,740 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSQ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:59.059+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:59,059 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BSR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:03:59.387+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:03:59,387 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for BST. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:42.647+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:42,647 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CMV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:42.973+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:42,972 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CMW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:43.343+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:43,343 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CMX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:43.773+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:43,773 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:44.108+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:44,108 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:44.462+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:44,462 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CNG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:44.816+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:44,815 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CNN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:45.178+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:45,178 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:45.493+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:45,493 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for COM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:45.808+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:45,808 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CPA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:46.145+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:46,145 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:46.484+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:46,484 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:46.806+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:46,806 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CPI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:47.167+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:47,167 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CQN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:47.547+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:47,547 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CQT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:47.915+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:47,915 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:48.252+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:48,252 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CRE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:48.597+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:48,597 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:48.953+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:48,953 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:49.304+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:49,304 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CSM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:49.668+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:49,668 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CST. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:50.021+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:50,021 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CSV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:50.356+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:50,356 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CT3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:50.711+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:50,711 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CT6. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:51.063+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:51,063 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:51.402+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:51,402 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:51.821+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:51,821 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:52.179+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:52,179 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:52.508+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:52,508 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:52.851+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:52,851 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:53.197+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:53,197 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:53.542+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:53,542 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:53.855+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:53,855 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:54.217+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:54,217 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:54.568+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:54,568 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:54.967+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:54,966 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:55.329+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:55,329 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:55.705+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:55,705 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CTX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:56.061+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:56,060 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CVN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:56.395+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:56,394 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CVT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:56.739+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:56,739 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CX8. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:57.083+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:57,083 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for CYC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:57.390+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:57,390 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for D11. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:57.711+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:57,711 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for D2D. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:58.062+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:58,062 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DAC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:58.359+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:58,359 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DAD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:58.672+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:58,672 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DAE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:58.965+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:58,964 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DAG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:04:59.329+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:04:59,329 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DAH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:39.794+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:39,793 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DTT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:40.130+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:40,130 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DTV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:40.460+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:40,460 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DUS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:40.760+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:40,760 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:41.045+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:41,045 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:41.373+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:41,373 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:41.703+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:41,703 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:42.032+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:42,031 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:42.360+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:42,360 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DVW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:42.668+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:42,667 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DWC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:42.952+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:42,952 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DWS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:43.423+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:43,423 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DXG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:43.755+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:43,755 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DXL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:44.163+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:44,162 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DXP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:44.506+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:44,506 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DXS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:44.812+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:44,812 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DXV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:45.112+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:45,112 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for DZM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:45.407+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:45,407 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for E12. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:45.717+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:45,716 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for E29. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:46.003+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:46,002 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EBS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:46.289+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:46,289 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for ECI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:46.608+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:46,608 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EFI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:47.020+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:47,020 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EIB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:47.326+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:47,326 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:47.641+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:47,641 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:47.970+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:47,970 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EIN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:48.318+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:48,317 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for ELC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:48.637+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:48,637 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EME. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:48.959+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:48,959 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EMG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:49.245+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:49,245 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:49.544+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:49,544 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:49.858+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:49,858 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:50.147+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:50,147 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EVE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:50.497+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:50,497 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EVF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:50.788+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:50,788 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EVG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:51.132+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:51,132 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for EVS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:51.450+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:51,450 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FBA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:51.848+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:51,848 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:52.249+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:52,249 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:52.547+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:52,547 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:52.879+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:52,879 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FCN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:53.178+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:53,178 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FCS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:53.523+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:53,523 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:53.847+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:53,846 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FGL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:54.152+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:54,152 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FHN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:54.479+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:54,479 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FHS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:54.806+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:54,806 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:55.142+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:55,142 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:55.476+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:55,476 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FIR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:55.872+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:55,872 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FIT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:56.212+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:56,212 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FLC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:56.536+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:56,535 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:56.860+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:56,860 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FOC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:57.174+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:57,173 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FOX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:57.493+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:57,493 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FPT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:57.796+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:57,796 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:58.141+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:58,141 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FRM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:58.447+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:58,447 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FRT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:58.733+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:58,733 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FSO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:59.047+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:59,047 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FT1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:05:59.363+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:05:59,363 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for FTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:24.598+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/vnstock3/explorer/tcbs/company.py:87 MarkupResemblesLocatorWarning: The input looks more like a filename than markup. You may want to open this file and pass the filehandle into Beautiful Soup.
+[2024-08-22T14:06:40.070+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:40,070 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HJS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:40.431+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:40,431 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HKB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:40.741+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:40,740 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HKT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:41.053+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:41,053 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:41.356+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:41,356 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:41.726+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:41,726 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:42.035+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:42,035 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:42.341+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:42,341 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:42.639+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:42,639 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:42.965+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:42,965 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:43.262+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:43,262 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HLY. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:43.557+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:43,557 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:43.885+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:43,884 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HMG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:44.297+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:44,297 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HMH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:44.738+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:44,738 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HMR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:45.279+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:45,279 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:45.601+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:45,601 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:45.939+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:45,939 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:46.292+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:46,292 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HND. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:46.687+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:46,687 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:47.018+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:47,018 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:47.346+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:47,346 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:47.700+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:47,700 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:48.050+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:48,050 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:48.409+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:48,409 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HNR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:48.752+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:48,751 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HOM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:49.093+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:49,093 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HOT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:49.427+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:49,427 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:49.765+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:49,765 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:50.092+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:50,092 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:50.447+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:50,447 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:50.783+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:50,783 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:51.145+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:51,145 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:51.475+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:51,475 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:51.840+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:51,840 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:52.167+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:52,167 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:52.500+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:52,500 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HPX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:52.867+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:52,866 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HQC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:53.219+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:53,219 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HRB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:53.568+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:53,568 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:53.892+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:53,892 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HRT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:54.268+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:54,268 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:54.659+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:54,659 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:54.980+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:54,980 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:55.301+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:55,301 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:55.624+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:55,623 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:55.965+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:55,965 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:56.352+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:56,352 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HSV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:56.836+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:56,836 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HT1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:57.206+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:57,206 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:57.563+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:57,562 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:57.904+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:57,904 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:58.254+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:58,254 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:58.600+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:58,600 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:58.920+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:58,920 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:59.245+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:59,245 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:06:59.569+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:06:59,569 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for HTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:51.397+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:51,396 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for L61. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:51.732+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:51,732 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for L62. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:52.106+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:52,106 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for L63. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:52.419+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:52,419 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LAF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:52.744+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:52,743 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LAI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:53.092+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:53,092 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LAS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:53.439+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:53,439 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LAW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:53.817+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:53,817 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:54.178+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:54,177 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LBE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:54.518+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:54,518 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LBM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:54.848+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:54,848 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:55.189+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:55,189 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LCD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:55.522+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:55,522 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:55.854+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:55,853 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:56.170+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:56,170 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LCS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:56.485+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:56,485 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LDG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:56.866+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:56,866 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:57.289+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:57,289 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LDW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:57.609+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:57,609 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LEC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:57.937+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:57,936 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LG9. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:58.264+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:58,264 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:58.612+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:58,612 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LGL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:58.953+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:58,952 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LGM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:07:59.356+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:07:59,356 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for LHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:45.088+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:45,088 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:45.554+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:45,554 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NBE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:45.962+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:45,962 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NBP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:46.289+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:46,289 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NBT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:46.629+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:46,629 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NBW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:46.983+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:46,983 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:47.339+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:47,339 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NCS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:47.700+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:47,700 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:48.034+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:48,034 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for ND2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:48.365+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:48,365 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:48.655+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:48,655 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:48.949+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:48,949 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:49.293+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:49,293 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:49.649+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:49,649 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:49.938+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:49,938 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:50.216+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:50,216 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NDX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:50.537+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:50,536 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NED. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:50.837+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:50,837 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NEM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:51.164+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:51,164 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NET. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:51.670+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:51,670 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NFC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:52.011+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:52,010 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:52.323+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:52,323 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:52.636+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:52,636 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:52.931+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:52,931 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:53.241+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:53,241 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:53.570+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:53,570 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:53.877+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:53,877 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NHV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:54.239+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:54,239 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NJC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:54.580+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:54,580 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NKG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:54.918+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:54,918 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NLG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:55.274+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:55,274 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NLS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:55.663+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:55,663 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:56.023+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:56,023 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:56.342+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:56,342 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NO1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:56.633+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:56,633 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NOS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:56.941+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:56,941 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NQB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:57.224+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:57,223 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NQN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:57.534+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:57,534 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NQT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:57.894+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:57,894 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:58.203+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:58,202 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NS2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:58.515+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:58,515 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:58.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:58,832 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:59.142+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:59,142 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NSH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:08:59.480+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:08:59,480 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for NSL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:42.636+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:42,636 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for POM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:43.003+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:43,003 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for POS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:43.351+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:43,351 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for POT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:43.728+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:43,728 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for POV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:44.089+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:44,089 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for POW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:44.450+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:44,450 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:44.779+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:44,779 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:45.121+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:45,121 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:45.490+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:45,490 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:45.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:45,832 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:46.173+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:46,172 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:46.508+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:46,507 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:46.902+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:46,902 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PPY. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:47.260+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:47,259 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PQN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:47.710+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:47,710 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:48.230+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:48,230 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PRE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:48.700+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:48,700 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PRO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:49.151+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:49,151 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PRT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:49.550+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:49,549 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:49.911+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:49,910 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:50.269+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:50,269 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:50.616+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:50,616 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:50.975+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:50,975 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:51.310+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:51,310 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:51.722+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:51,722 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:52.099+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:52,099 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:52.428+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:52,428 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:52.769+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:52,769 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:53.118+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:53,118 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PSW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:53.480+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:53,480 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:53.818+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:53,818 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:54.181+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:54,181 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:54.632+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:54,632 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:54.973+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:54,973 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:55.319+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:55,319 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:55.932+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:55,932 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:56.244+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:56,244 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:56.579+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:56,579 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:56.920+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:56,920 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:57.254+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:57,254 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:57.662+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:57,662 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:57.984+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:57,983 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:58.317+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:58,317 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:58.671+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:58,671 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PTX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:58.988+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:58,988 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PV2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:09:59.346+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:09:59,346 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for PVA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:45.140+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:45,139 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SD9. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:45.563+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:45,563 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:45.908+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:45,908 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:46.263+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:46,263 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:46.609+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:46,609 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:46.974+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:46,974 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:47.297+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:47,296 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:47.680+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:47,679 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDK. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:48.068+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:48,068 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:48.523+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:48,523 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:48.877+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:48,877 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:49.216+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:49,216 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDU. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:49.567+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:49,567 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:49.885+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:49,885 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:50.223+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:50,223 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SDY. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:50.569+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:50,569 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SEA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:50.930+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:50,930 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SEB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:51.286+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:51,286 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SED. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:51.645+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:51,645 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SEP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:52.023+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:52,023 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SFC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:52.423+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:52,423 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SFG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:52.769+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:52,769 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SFI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:53.134+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:53,134 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SFN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:53.598+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:53,598 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:53.963+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:53,963 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:54.326+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:54,326 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:54.678+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:54,678 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:55.035+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:55,034 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:55.375+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:55,375 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:55.712+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:55,712 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:56.065+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:56,065 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:56.446+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:56,446 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:56.860+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:56,860 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:57.204+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:57,204 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SGT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:57.534+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:57,534 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:57.888+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:57,888 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:58.230+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:58,230 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:58.598+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:58,598 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:58.946+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:58,946 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:10:59.290+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:10:59,290 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for SHI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:48.630+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:48,630 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:48.973+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:48,973 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:49.311+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:49,310 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:49.651+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:49,651 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:49.995+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:49,995 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:50.347+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:50,347 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TCW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:50.732+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:50,732 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:51.104+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:51,104 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:51.453+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:51,453 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:51.780+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:51,780 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:52.102+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:52,102 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:52.529+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:52,529 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:53.069+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:53,069 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:53.424+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:53,424 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:53.792+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:53,792 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:54.132+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:54,132 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:54.457+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:54,457 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:54.770+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:54,770 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TDW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:55.101+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:55,101 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TED. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:55.422+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:55,422 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TEG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:55.795+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:55,795 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TEL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:56.149+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:56,149 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TET. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:56.535+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:56,535 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TFC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:56.940+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:56,940 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TGG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:57.278+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:57,278 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TGP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:57.616+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:57,616 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TH1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:57.958+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:57,957 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for THB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:58.353+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:58,353 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for THD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:58.747+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:58,747 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for THG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:59.090+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:59,090 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for THM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:11:59.457+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:11:59,457 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for THN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:43.585+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:43,579 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TW3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:43.913+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:43,913 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TXM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:44.235+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:44,235 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for TYA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:44.637+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:44,637 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:45.013+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:45,012 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:45.339+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:45,339 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UDJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:45.661+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:45,661 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UDL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:46.019+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:46,019 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UEM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:46.327+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:46,327 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:46.643+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:46,643 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:46.939+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:46,939 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UNI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:47.227+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:47,227 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:47.511+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:47,511 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for UPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:47.826+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:47,826 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for USC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:48.152+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:48,152 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for USD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:48.448+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:48,448 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for V11. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:48.795+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:48,795 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for V12. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:49.202+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:49,202 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for V15. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:49.504+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:49,504 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for V21. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:50.433+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:50,433 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VAB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:50.756+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:50,756 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VAF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:51.058+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:51,058 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VAV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:51.374+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:51,374 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VBB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:51.675+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:51,675 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:51.973+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:51,973 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VBG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:52.304+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:52,304 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VBH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:52.628+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:52,627 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:52.974+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:52,974 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:53.319+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:53,319 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:53.608+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:53,608 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC5. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:53.945+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:53,945 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC6. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:54.260+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:54,259 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC7. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:54.591+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:54,591 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VC9. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:54.892+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:54,891 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:55.229+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:55,229 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:55.549+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:55,549 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:55.874+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:55,874 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:56.190+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:56,190 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:57.518+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:57,518 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:57.825+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:57,825 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:58.122+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:58,121 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:58.417+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:58,416 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:58.769+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:58,769 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:59.060+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:59,060 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:12:59.391+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:12:59,391 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:46.154+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:46,154 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VQC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:46.517+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:46,517 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:46.890+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:46,890 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VRE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:47.186+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:47,185 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VRG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:47.601+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:47,601 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:48.004+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:48,004 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:48.329+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:48,329 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:48.653+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:48,653 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:48.945+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:48,945 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:49.254+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:49,254 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:49.553+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:49,553 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:49.885+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:49,885 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:50.196+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:50,196 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VSN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:50.508+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:50,508 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VST. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:50.844+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:50,844 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:51.182+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:51,182 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:51.517+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:51,517 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:51.854+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:51,854 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:52.141+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:52,141 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:52.438+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:52,438 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:52.757+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:52,757 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:53.059+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:53,058 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:53.380+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:53,380 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:53.746+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:53,746 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTK. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:54.065+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:54,065 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:54.363+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:54,363 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:54.651+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:54,651 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:54.992+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:54,992 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:55.329+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:55,329 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTQ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:55.647+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:55,647 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:55.971+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:55,971 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:56.398+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:56,398 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:56.683+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:56,683 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:56.991+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:56,991 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VTZ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:57.322+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:57,322 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VUA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:57.642+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:57,642 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VVN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:58.004+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:58,004 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VVS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:58.549+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:58,549 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VW3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:58.861+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:58,860 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VWS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:59.241+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:59,241 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VXB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:13:59.574+0000] {logging_mixin.py:188} WARNING - 2024-08-22 14:13:59,574 - vnstock3.explorer.tcbs.company - ERROR - Error fetching company profile data for VXP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T14:14:10.074+0000] {python.py:237} INFO - Done. Returned value was:                                            company_name  ... message
+0                                    Công ty Cổ phần 32  ...     NaN
+1                     Công ty Cổ phần Nhựa An Phát Xanh  ...     NaN
+2                       Công ty Cổ Phần Thủy Sản MeKong  ...     NaN
+3               Công ty Cổ phần Chứng khoán SmartInvest  ...     NaN
+4           Công ty Cổ phần Tập đoàn Tiên Sơn Thanh Hóa  ...     NaN
+...                                                 ...  ...     ...
+1593                    Công ty Cổ phần Xà phòng Hà Nội  ...     NaN
+1594      Công ty Cổ phần Xi măng và Khoáng sản Yên Bái  ...     NaN
+1595     Công ty Cổ phần Khoáng sản Công nghiệp Yên Bái  ...     NaN
+1596                     Công ty Cổ phần Tập đoàn Yeah1  ...     NaN
+1597  Công ty Cổ phần Xuất nhập khẩu Y tế Thành phố ...  ...     NaN
+
+[1598 rows x 9 columns]
+[2024-08-22T14:14:10.279+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-22T14:14:11.267+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=update_company_profiles_in_s3_year_123, task_id=fetch_company_profiles, run_id=manual__2024-08-22T14:02:54.414643+00:00, execution_date=20240822T140254, start_date=20240822T140301, end_date=20240822T141411
+[2024-08-22T14:14:11.475+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-22T14:14:11.752+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-22T14:14:11.757+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,98 @@
+[2024-08-23T03:16:50.260+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:16:50.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:16:50.265+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:50.264+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:16:51.672+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:16:51.832+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:51.831+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:16:51.845+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:16:51.845+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:16:51.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.614 seconds
+[2024-08-23T03:17:22.510+0000] {processor.py:161} INFO - Started process (PID=291) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:22.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:17:22.515+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:22.514+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:24.169+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:24.208+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:24.207+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:17:24.226+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:24.225+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:17:24.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.760 seconds
+[2024-08-23T03:17:54.351+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:54.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:17:54.355+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:54.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:55.810+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:17:55.849+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:55.848+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:17:55.867+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:17:55.866+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:17:55.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.573 seconds
+[2024-08-23T03:18:26.864+0000] {processor.py:161} INFO - Started process (PID=469) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:18:26.867+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:18:26.869+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:26.869+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:18:28.899+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:18:28.926+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:28.926+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:18:28.940+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:28.940+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:18:28.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 2.108 seconds
+[2024-08-23T03:18:59.234+0000] {processor.py:161} INFO - Started process (PID=590) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:18:59.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:18:59.239+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:18:59.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:19:01.394+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:19:01.448+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:01.446+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:19:01.473+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:01.472+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:19:01.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 2.289 seconds
+[2024-08-23T03:19:31.674+0000] {processor.py:161} INFO - Started process (PID=672) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:19:31.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:19:31.681+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:31.679+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:19:33.571+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:19:33.607+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:33.606+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:19:33.632+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:19:33.631+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:19:33.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 2.016 seconds
+[2024-08-23T03:20:04.518+0000] {processor.py:161} INFO - Started process (PID=768) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:04.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:20:04.522+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:04.521+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:05.937+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:05.962+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:05.961+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:20:05.975+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:05.975+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:20:05.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.482 seconds
+[2024-08-23T03:20:36.558+0000] {processor.py:161} INFO - Started process (PID=850) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:36.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:20:36.562+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:36.561+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:37.863+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:20:37.889+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:37.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:20:37.899+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:20:37.899+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:20:37.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.366 seconds
+[2024-08-23T03:21:08.978+0000] {processor.py:161} INFO - Started process (PID=946) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:08.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:21:08.982+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:08.982+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:10.518+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:10.542+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:10.541+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:21:10.554+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:10.554+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:21:10.573+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.601 seconds
+[2024-08-23T03:21:41.157+0000] {processor.py:161} INFO - Started process (PID=1028) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:41.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:21:41.160+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:41.160+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:42.531+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:21:42.569+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:42.568+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:21:42.588+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:21:42.588+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:21:42.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.470 seconds
+[2024-08-23T03:22:14.243+0000] {processor.py:161} INFO - Started process (PID=1124) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:14.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:22:14.268+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:14.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:16.429+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:16.462+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:16.461+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:22:16.476+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:16.475+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:22:16.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 2.267 seconds
+[2024-08-23T03:22:46.672+0000] {processor.py:161} INFO - Started process (PID=1205) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:46.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:22:46.676+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:46.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:48.070+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:22:48.093+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:48.093+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:22:48.104+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:22:48.103+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:22:48.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.458 seconds
+[2024-08-23T03:23:18.879+0000] {processor.py:161} INFO - Started process (PID=1288) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:18.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:23:18.884+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:18.884+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:20.103+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:20.129+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:20.129+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:23:20.140+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:20.140+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:23:20.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.287 seconds
+[2024-08-23T03:23:51.197+0000] {processor.py:161} INFO - Started process (PID=1386) to work on /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:51.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_insider_deals_raw.py for tasks to queue
+[2024-08-23T03:23:51.201+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:51.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:52.526+0000] {processor.py:840} INFO - DAG(s) 'update_insider_deals_in_s3_monthly' retrieved from /opt/airflow/dags/load_insider_deals_raw.py
+[2024-08-23T03:23:52.552+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:52.552+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-23T03:23:52.564+0000] {logging_mixin.py:188} INFO - [2024-08-23T03:23:52.563+0000] {dag.py:3947} INFO - Setting next_dagrun for update_insider_deals_in_s3_monthly to None, run_after=None
+[2024-08-23T03:23:52.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_insider_deals_raw.py took 1.395 seconds

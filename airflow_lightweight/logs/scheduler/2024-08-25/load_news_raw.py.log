@@ -1,0 +1,214 @@
+[2024-08-25T07:36:44.409+0000] {processor.py:161} INFO - Started process (PID=204) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:36:44.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T07:36:44.417+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:44.413+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:36:47.841+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:36:48.482+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:48.479+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:36:48.535+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:48.534+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T07:36:48.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 4.170 seconds
+[2024-08-25T07:37:19.085+0000] {processor.py:161} INFO - Started process (PID=293) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:19.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T07:37:19.090+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:19.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:21.151+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:21.321+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:21.319+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:37:21.422+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:21.418+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T07:37:21.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 2.426 seconds
+[2024-08-25T07:37:52.685+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:52.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T07:37:52.692+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:52.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:55.025+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T07:37:55.054+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:55.053+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:37:55.092+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:55.091+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T07:37:55.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 2.453 seconds
+[2024-08-25T15:16:39.341+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:16:39.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:16:39.345+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:39.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:16:41.097+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:16:41.506+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:41.505+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:16:41.575+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:41.574+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:16:41.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 2.315 seconds
+[2024-08-25T15:17:13.255+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:13.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:17:13.258+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:13.258+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:14.532+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:14.558+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:14.557+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:17:14.577+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:14.577+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:17:14.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.345 seconds
+[2024-08-25T15:17:46.350+0000] {processor.py:161} INFO - Started process (PID=386) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:46.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:17:46.355+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:46.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:48.262+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:17:48.284+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:48.283+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:17:48.306+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:48.306+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:17:48.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.980 seconds
+[2024-08-25T15:18:18.504+0000] {processor.py:161} INFO - Started process (PID=466) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:18.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:18:18.509+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:18.508+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:19.934+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:19.964+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:19.963+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:18:19.988+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:19.988+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:18:20.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.516 seconds
+[2024-08-25T15:18:51.569+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:51.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:18:51.573+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:51.572+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:52.966+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:18:52.990+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:52.989+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:18:53.010+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:53.010+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:18:53.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.468 seconds
+[2024-08-25T15:19:23.273+0000] {processor.py:161} INFO - Started process (PID=665) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:23.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:19:23.280+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:23.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:24.386+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:24.426+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:24.426+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:19:24.449+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:24.449+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:19:24.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.205 seconds
+[2024-08-25T15:19:54.756+0000] {processor.py:161} INFO - Started process (PID=761) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:54.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:19:54.758+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:54.758+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:55.959+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:19:56.008+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:56.007+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:19:56.039+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:56.039+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:19:56.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.331 seconds
+[2024-08-25T15:20:26.655+0000] {processor.py:161} INFO - Started process (PID=848) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:26.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:20:26.658+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:26.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:27.952+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:28.078+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:28.076+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:20:28.164+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:28.163+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:20:28.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.773 seconds
+[2024-08-25T15:20:58.835+0000] {processor.py:161} INFO - Started process (PID=939) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:58.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:20:58.838+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:58.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:59.883+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:20:59.906+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:59.905+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:20:59.922+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:59.922+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:20:59.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.112 seconds
+[2024-08-25T15:21:30.915+0000] {processor.py:161} INFO - Started process (PID=1033) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:21:30.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:21:30.918+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:30.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:21:31.976+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:21:31.997+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:31.997+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:21:32.015+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:32.015+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:21:32.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.134 seconds
+[2024-08-25T15:22:41.583+0000] {processor.py:161} INFO - Started process (PID=1123) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:22:41.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:22:44.510+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:22:43.768+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:23:19.578+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:19.575+0000] {timeout.py:68} ERROR - Process timed out, PID: 1123
+[2024-08-25T15:23:19.580+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7fc21af8a020>
+[2024-08-25T15:23:19.581+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2024-08-25T15:23:19.582+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.12/weakref.py", line 369, in remove
+[2024-08-25T15:23:19.584+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2024-08-25T15:23:19.584+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2024-08-25T15:23:19.585+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2024-08-25T15:23:19.587+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/load_news_raw.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 1123
+[2024-08-25T15:23:21.230+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:23:21.330+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:21.329+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:23:21.437+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:21.436+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:23:21.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 44.791 seconds
+[2024-08-25T15:23:51.686+0000] {processor.py:161} INFO - Started process (PID=1241) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:23:51.687+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:23:51.689+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:51.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:23:52.854+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:23:52.879+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:52.878+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:23:52.898+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:52.898+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:23:52.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.239 seconds
+[2024-08-25T15:24:23.834+0000] {processor.py:161} INFO - Started process (PID=1337) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:23.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:24:23.841+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:23.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:25.090+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:25.127+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:25.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:24:25.156+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:25.156+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:24:25.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.376 seconds
+[2024-08-25T15:24:55.546+0000] {processor.py:161} INFO - Started process (PID=1419) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:55.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:24:55.554+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:55.552+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:58.100+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:24:58.166+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:58.165+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:24:58.220+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:58.218+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:24:58.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 2.770 seconds
+[2024-08-25T15:25:28.869+0000] {processor.py:161} INFO - Started process (PID=1518) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:25:28.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:25:28.873+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:28.872+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:25:30.518+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:25:30.599+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:30.598+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:25:30.624+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:30.624+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:25:30.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.790 seconds
+[2024-08-25T15:26:00.899+0000] {processor.py:161} INFO - Started process (PID=1614) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:00.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:26:00.901+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:00.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:01.983+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:02.008+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:02.008+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:26:02.026+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:02.026+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:26:02.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.153 seconds
+[2024-08-25T15:26:32.795+0000] {processor.py:161} INFO - Started process (PID=1696) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:32.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:26:32.796+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:32.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:33.760+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:26:33.784+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:33.784+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:26:33.804+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:33.804+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:26:33.823+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.034 seconds
+[2024-08-25T15:27:04.497+0000] {processor.py:161} INFO - Started process (PID=1816) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:04.498+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:27:04.499+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:04.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:05.552+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:05.574+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:05.574+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:27:05.595+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:05.594+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:27:05.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.118 seconds
+[2024-08-25T15:27:36.298+0000] {processor.py:161} INFO - Started process (PID=1898) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:36.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:27:36.300+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:36.300+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:37.610+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:27:37.633+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:37.633+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:27:37.658+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:37.658+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:27:37.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.388 seconds
+[2024-08-25T15:28:07.767+0000] {processor.py:161} INFO - Started process (PID=1995) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:07.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:28:07.769+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:07.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:08.939+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:08.966+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:08.965+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:28:08.988+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:08.987+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:28:09.007+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.246 seconds
+[2024-08-25T15:28:39.974+0000] {processor.py:161} INFO - Started process (PID=2091) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:39.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:28:39.978+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:39.977+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:40.980+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:28:41.002+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:41.001+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:28:41.018+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:41.018+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:28:41.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.071 seconds
+[2024-08-25T15:29:11.849+0000] {processor.py:161} INFO - Started process (PID=2173) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:11.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:29:11.851+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:11.851+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:12.887+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:12.915+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:12.914+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:29:12.940+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:12.940+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:29:12.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.121 seconds
+[2024-08-25T15:29:43.399+0000] {processor.py:161} INFO - Started process (PID=2269) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:43.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:29:43.402+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:43.401+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:44.594+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:29:44.614+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:44.613+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:29:44.630+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:44.629+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:29:44.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.252 seconds
+[2024-08-25T15:30:17.414+0000] {processor.py:161} INFO - Started process (PID=2359) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:30:17.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:30:17.655+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:30:17.654+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:30:35.315+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:30:35.849+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:30:35.847+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:30:36.195+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:30:36.194+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:30:36.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 19.212 seconds
+[2024-08-25T15:31:12.354+0000] {processor.py:161} INFO - Started process (PID=2446) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:12.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:31:12.357+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:12.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:14.914+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:15.007+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:15.006+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:31:15.063+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:15.063+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:31:15.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 2.781 seconds
+[2024-08-25T15:31:45.701+0000] {processor.py:161} INFO - Started process (PID=2535) to work on /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:45.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_news_raw.py for tasks to queue
+[2024-08-25T15:31:45.704+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:45.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:47.068+0000] {processor.py:840} INFO - DAG(s) 'update_company_news_in_s3_week' retrieved from /opt/airflow/dags/load_news_raw.py
+[2024-08-25T15:31:47.135+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:47.135+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:31:47.179+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:47.179+0000] {dag.py:3947} INFO - Setting next_dagrun for update_company_news_in_s3_week to 2024-09-01 00:00:00+00:00, run_after=2024-10-01 00:00:00+00:00
+[2024-08-25T15:31:47.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_news_raw.py took 1.520 seconds

@@ -1,0 +1,34 @@
+[2024-08-22T10:42:11.156+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-22T10:42:11.186+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_stock_data_daily_into_s3_123.fetch_new_data_1 scheduled__2024-08-20T17:45:00+00:00 [queued]>
+[2024-08-22T10:42:11.198+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_stock_data_daily_into_s3_123.fetch_new_data_1 scheduled__2024-08-20T17:45:00+00:00 [queued]>
+[2024-08-22T10:42:11.199+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-22T10:42:11.215+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_new_data_1> on 2024-08-20 17:45:00+00:00
+[2024-08-22T10:42:11.237+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2529) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-22T10:42:11.238+0000] {standard_task_runner.py:64} INFO - Started process 2538 to run task
+[2024-08-22T10:42:11.237+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_stock_data_daily_into_s3_123', 'fetch_new_data_1', 'scheduled__2024-08-20T17:45:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/load_data_into_s3_daily.py', '--cfg-path', '/tmp/tmpujfbv_j6']
+[2024-08-22T10:42:11.240+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask fetch_new_data_1
+[2024-08-22T10:42:11.255+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-08-22T10:42:11.295+0000] {task_command.py:426} INFO - Running <TaskInstance: update_stock_data_daily_into_s3_123.fetch_new_data_1 scheduled__2024-08-20T17:45:00+00:00 [running]> on host fa4e08fee2f6
+[2024-08-22T10:42:11.454+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_stock_data_daily_into_s3_123' AIRFLOW_CTX_TASK_ID='fetch_new_data_1' AIRFLOW_CTX_EXECUTION_DATE='2024-08-20T17:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-20T17:45:00+00:00'
+[2024-08-22T10:42:11.456+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-22T10:42:33.201+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy dữ liệu cho mã cổ phiếu FUEBFVND: list index out of range
+[2024-08-22T10:43:00.284+0000] {logging_mixin.py:188} INFO - Lỗi khi lấy dữ liệu cho mã cổ phiếu SBT: Failed to fetch data: 405 - Not Allowed
+[2024-08-22T10:43:22.973+0000] {python.py:237} INFO - Done. Returned value was:            time   open   high    low  close   volume symbol
+0    2024-08-19  10.65  10.80  10.60  10.65  3677600    AAA
+1    2024-08-20  10.65  10.85  10.60  10.80  5622200    AAA
+2    2024-08-21  10.70  10.80  10.60  10.75  3864500    AAA
+3    2024-08-22  10.75  10.80  10.55  10.65  3877100    AAA
+4    2024-08-19   7.63   7.65   7.12   7.60    14100    AAM
+...         ...    ...    ...    ...    ...      ...    ...
+1649 2024-08-22  11.00  11.00  11.00  11.00      400    YBM
+1650 2024-08-19   9.20   9.29   9.15   9.15   508900    YEG
+1651 2024-08-20   9.21   9.27   9.14   9.17  1025800    YEG
+1652 2024-08-21   9.17   9.49   9.16   9.26  1003900    YEG
+1653 2024-08-22   9.28   9.70   9.09   9.70  1777500    YEG
+
+[1654 rows x 7 columns]
+[2024-08-22T10:43:22.992+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-22T10:43:23.085+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=update_stock_data_daily_into_s3_123, task_id=fetch_new_data_1, run_id=scheduled__2024-08-20T17:45:00+00:00, execution_date=20240820T174500, start_date=20240822T104211, end_date=20240822T104323
+[2024-08-22T10:43:23.137+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-22T10:43:23.156+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-08-22T10:43:23.158+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

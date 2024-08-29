@@ -1,0 +1,1777 @@
+[2024-08-22T13:18:15.577+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-22T13:18:15.690+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_insider_deals_in_s3_monthly.fetch_all_insider_deals manual__2024-08-22T13:18:11.734484+00:00 [queued]>
+[2024-08-22T13:18:15.699+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_insider_deals_in_s3_monthly.fetch_all_insider_deals manual__2024-08-22T13:18:11.734484+00:00 [queued]>
+[2024-08-22T13:18:15.699+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-22T13:18:15.710+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_all_insider_deals> on 2024-08-22 13:18:11.734484+00:00
+[2024-08-22T13:18:15.719+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=5994) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-22T13:18:15.720+0000] {standard_task_runner.py:64} INFO - Started process 5996 to run task
+[2024-08-22T13:18:15.720+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_insider_deals_in_s3_monthly', 'fetch_all_insider_deals', 'manual__2024-08-22T13:18:11.734484+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/load_insider_deals_raw.py', '--cfg-path', '/tmp/tmp64bibaii']
+[2024-08-22T13:18:15.722+0000] {standard_task_runner.py:91} INFO - Job 44: Subtask fetch_all_insider_deals
+[2024-08-22T13:18:15.733+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-08-22T13:18:15.766+0000] {task_command.py:426} INFO - Running <TaskInstance: update_insider_deals_in_s3_monthly.fetch_all_insider_deals manual__2024-08-22T13:18:11.734484+00:00 [running]> on host fa4e08fee2f6
+[2024-08-22T13:18:15.848+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_insider_deals_in_s3_monthly' AIRFLOW_CTX_TASK_ID='fetch_all_insider_deals' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T13:18:11.734484+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T13:18:11.734484+00:00'
+[2024-08-22T13:18:15.849+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-22T13:18:31.322+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:31,321 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:31.325+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:31,325 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for AGE. Columns: []
+[2024-08-22T13:18:31.325+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho AGE: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:42.712+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:42,712 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:42.713+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:42,713 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for APL. Columns: []
+[2024-08-22T13:18:42.714+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho APL: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:52.253+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:52,253 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:52.257+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:52,257 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BAL. Columns: []
+[2024-08-22T13:18:52.258+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BAL: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:54.096+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:54,096 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:54.098+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:54,098 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BBH. Columns: []
+[2024-08-22T13:18:54.099+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BBH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:54.437+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:54,437 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:54.438+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:54,438 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BBM. Columns: []
+[2024-08-22T13:18:54.439+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BBM: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:56.042+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:56,042 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:56.043+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:56,043 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BCB. Columns: []
+[2024-08-22T13:18:56.044+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BCB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:18:58.911+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:58,911 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:18:58.912+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:18:58,912 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BCO. Columns: []
+[2024-08-22T13:18:58.913+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BCO: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:07.163+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:07,163 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:07.164+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:07,164 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BHP. Columns: []
+[2024-08-22T13:19:07.166+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BHP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:12.846+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:12,846 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:12.848+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:12,848 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BLW. Columns: []
+[2024-08-22T13:19:12.849+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BLW: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:17.036+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:17,036 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:17.037+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:17,037 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BMV. Columns: []
+[2024-08-22T13:19:17.038+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BMV: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:19.031+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:19,031 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:19.113+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:19,113 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BQB. Columns: []
+[2024-08-22T13:19:19.179+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BQB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:22.052+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:22,052 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:22.053+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:22,053 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BSD. Columns: []
+[2024-08-22T13:19:22.054+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BSD: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:22.869+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:22,869 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:22.871+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:22,871 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BSH. Columns: []
+[2024-08-22T13:19:22.873+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BSH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:27.069+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:27,069 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:27.072+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:27,072 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BTB. Columns: []
+[2024-08-22T13:19:27.074+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BTB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:35.039+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:35,039 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:35.040+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:35,040 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for BWA. Columns: []
+[2024-08-22T13:19:35.041+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho BWA: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:40.477+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:40,477 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:19:40.479+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:40,479 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CAB. Columns: []
+[2024-08-22T13:19:40.480+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CAB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:19:45.549+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:45,549 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CC4. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:45.549+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CC4: 'listInsiderDealing'
+[2024-08-22T13:19:45.876+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:45,876 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:45.877+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCA: 'listInsiderDealing'
+[2024-08-22T13:19:46.220+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:46,220 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:46.220+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCI: 'listInsiderDealing'
+[2024-08-22T13:19:46.572+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:46,572 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:46.573+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCL: 'listInsiderDealing'
+[2024-08-22T13:19:47.156+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:47,156 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:47.157+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCM: 'listInsiderDealing'
+[2024-08-22T13:19:47.751+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:47,751 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:47.751+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCP: 'listInsiderDealing'
+[2024-08-22T13:19:48.076+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:48,076 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:48.077+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCR: 'listInsiderDealing'
+[2024-08-22T13:19:48.408+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:48,408 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:48.408+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCT: 'listInsiderDealing'
+[2024-08-22T13:19:48.752+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:48,752 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CCV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:48.753+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CCV: 'listInsiderDealing'
+[2024-08-22T13:19:49.089+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:49,089 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:49.090+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDC: 'listInsiderDealing'
+[2024-08-22T13:19:49.408+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:49,407 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:49.409+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDG: 'listInsiderDealing'
+[2024-08-22T13:19:49.824+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:49,824 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:49.825+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDH: 'listInsiderDealing'
+[2024-08-22T13:19:50.248+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:50,248 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:50.249+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDN: 'listInsiderDealing'
+[2024-08-22T13:19:50.574+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:50,574 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:50.575+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDO: 'listInsiderDealing'
+[2024-08-22T13:19:50.953+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:50,953 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:50.954+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDP: 'listInsiderDealing'
+[2024-08-22T13:19:51.365+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:51,365 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CDR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:51.366+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CDR: 'listInsiderDealing'
+[2024-08-22T13:19:51.739+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:51,739 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CE1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:51.740+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CE1: 'listInsiderDealing'
+[2024-08-22T13:19:52.117+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:52,117 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CEG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:52.118+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CEG: 'listInsiderDealing'
+[2024-08-22T13:19:52.436+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:52,436 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CEN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:52.437+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CEN: 'listInsiderDealing'
+[2024-08-22T13:19:52.760+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:52,759 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CEO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:52.760+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CEO: 'listInsiderDealing'
+[2024-08-22T13:19:53.084+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:53,084 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CET. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:53.085+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CET: 'listInsiderDealing'
+[2024-08-22T13:19:53.430+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:53,430 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CFM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:53.431+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CFM: 'listInsiderDealing'
+[2024-08-22T13:19:53.754+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:53,754 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CFV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:53.755+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CFV: 'listInsiderDealing'
+[2024-08-22T13:19:54.088+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:54,088 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CGV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:54.089+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CGV: 'listInsiderDealing'
+[2024-08-22T13:19:54.412+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:54,412 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CH5. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:54.413+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CH5: 'listInsiderDealing'
+[2024-08-22T13:19:54.767+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:54,767 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:54.768+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CHC: 'listInsiderDealing'
+[2024-08-22T13:19:55.245+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:55,245 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CHP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:55.246+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CHP: 'listInsiderDealing'
+[2024-08-22T13:19:55.682+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:55,682 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CHS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:55.684+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CHS: 'listInsiderDealing'
+[2024-08-22T13:19:56.005+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:56,005 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CI5. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:56.006+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CI5: 'listInsiderDealing'
+[2024-08-22T13:19:56.358+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:56,358 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CIA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:56.359+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CIA: 'listInsiderDealing'
+[2024-08-22T13:19:56.721+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:56,720 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:56.721+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CID: 'listInsiderDealing'
+[2024-08-22T13:19:57.084+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:57,084 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CIG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:57.084+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CIG: 'listInsiderDealing'
+[2024-08-22T13:19:57.422+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:57,422 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CII. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:57.423+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CII: 'listInsiderDealing'
+[2024-08-22T13:19:57.824+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:57,824 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CIP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:57.825+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CIP: 'listInsiderDealing'
+[2024-08-22T13:19:58.164+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:58,163 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CJC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:58.164+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CJC: 'listInsiderDealing'
+[2024-08-22T13:19:58.504+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:58,504 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CK8. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:58.505+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CK8: 'listInsiderDealing'
+[2024-08-22T13:19:58.824+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:58,824 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CKA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:58.825+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CKA: 'listInsiderDealing'
+[2024-08-22T13:19:59.197+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:59,197 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CKD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:59.198+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CKD: 'listInsiderDealing'
+[2024-08-22T13:19:59.606+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:19:59,606 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for CKG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:19:59.607+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CKG: 'listInsiderDealing'
+[2024-08-22T13:20:04.546+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:04,546 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:04.547+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:04,547 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CMF. Columns: []
+[2024-08-22T13:20:04.548+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CMF: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:05.877+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:05,877 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:05.878+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:05,878 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CMK. Columns: []
+[2024-08-22T13:20:05.879+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CMK: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:07.209+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:07,209 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:07.211+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:07,211 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CMP. Columns: []
+[2024-08-22T13:20:07.212+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CMP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:10.266+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:10,266 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:10.267+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:10,267 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CNA. Columns: []
+[2024-08-22T13:20:10.267+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CNA: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:15.108+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:15,107 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:15.109+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:15,109 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for CPH. Columns: []
+[2024-08-22T13:20:15.110+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho CPH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:39.459+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:39,459 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:20:39.461+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:39,461 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DCG. Columns: []
+[2024-08-22T13:20:39.462+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DCG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:20:48.907+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:48,906 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DHG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:48.908+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DHG: 'listInsiderDealing'
+[2024-08-22T13:20:49.241+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:49,241 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DHM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:49.242+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DHM: 'listInsiderDealing'
+[2024-08-22T13:20:49.577+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:49,577 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DHN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:49.578+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DHN: 'listInsiderDealing'
+[2024-08-22T13:20:49.894+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:49,894 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DHP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:49.894+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DHP: 'listInsiderDealing'
+[2024-08-22T13:20:50.279+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:50,278 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DHT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:50.280+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DHT: 'listInsiderDealing'
+[2024-08-22T13:20:50.685+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:50,685 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:50.686+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DIC: 'listInsiderDealing'
+[2024-08-22T13:20:51.023+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:51,022 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:51.023+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DID: 'listInsiderDealing'
+[2024-08-22T13:20:51.339+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:51,339 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DIG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:51.340+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DIG: 'listInsiderDealing'
+[2024-08-22T13:20:51.660+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:51,660 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DIH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:51.661+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DIH: 'listInsiderDealing'
+[2024-08-22T13:20:52.086+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:52,085 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DKC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:52.086+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DKC: 'listInsiderDealing'
+[2024-08-22T13:20:52.533+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:52,533 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DL1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:52.534+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DL1: 'listInsiderDealing'
+[2024-08-22T13:20:52.868+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:52,868 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DLD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:52.869+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DLD: 'listInsiderDealing'
+[2024-08-22T13:20:53.207+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:53,207 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DLG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:53.208+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DLG: 'listInsiderDealing'
+[2024-08-22T13:20:53.539+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:53,539 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DLM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:53.541+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DLM: 'listInsiderDealing'
+[2024-08-22T13:20:53.869+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:53,869 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DLR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:53.869+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DLR: 'listInsiderDealing'
+[2024-08-22T13:20:54.175+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:54,175 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:54.176+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DLT: 'listInsiderDealing'
+[2024-08-22T13:20:54.528+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:54,528 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DM7. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:54.530+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DM7: 'listInsiderDealing'
+[2024-08-22T13:20:54.851+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:54,851 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:54.852+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DMC: 'listInsiderDealing'
+[2024-08-22T13:20:55.192+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:55,191 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DMN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:55.193+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DMN: 'listInsiderDealing'
+[2024-08-22T13:20:55.517+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:55,516 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:55.518+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DMS: 'listInsiderDealing'
+[2024-08-22T13:20:55.985+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:55,985 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:55.986+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNA: 'listInsiderDealing'
+[2024-08-22T13:20:56.581+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:56,581 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:56.582+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNC: 'listInsiderDealing'
+[2024-08-22T13:20:56.965+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:56,965 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DND. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:56.966+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DND: 'listInsiderDealing'
+[2024-08-22T13:20:57.316+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:57,316 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:57.317+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNE: 'listInsiderDealing'
+[2024-08-22T13:20:57.668+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:57,668 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:57.669+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNH: 'listInsiderDealing'
+[2024-08-22T13:20:58.013+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:58,013 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:58.013+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNL: 'listInsiderDealing'
+[2024-08-22T13:20:58.374+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:58,374 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:58.375+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNM: 'listInsiderDealing'
+[2024-08-22T13:20:58.740+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:58,739 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:58.741+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNN: 'listInsiderDealing'
+[2024-08-22T13:20:59.067+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:59,067 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:59.068+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNP: 'listInsiderDealing'
+[2024-08-22T13:20:59.429+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:20:59,429 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for DNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:20:59.430+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DNT: 'listInsiderDealing'
+[2024-08-22T13:21:01.774+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:01,773 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:01.775+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:01,775 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DP2. Columns: []
+[2024-08-22T13:21:01.776+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DP2: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:03.331+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:03,330 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:03.332+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:03,331 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DPH. Columns: []
+[2024-08-22T13:21:03.332+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DPH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:06.259+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:06,259 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:06.260+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:06,260 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DRG. Columns: []
+[2024-08-22T13:21:06.261+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DRG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:14.755+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:14,755 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:14.756+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:14,756 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DTK. Columns: []
+[2024-08-22T13:21:14.757+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DTK: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:17.256+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:17,255 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:17.257+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:17,257 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for DUS. Columns: []
+[2024-08-22T13:21:17.258+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho DUS: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:23.513+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:23,512 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:23.515+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:23,515 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for E29. Columns: []
+[2024-08-22T13:21:23.516+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho E29: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:28.624+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:28,623 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:28.626+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:28,626 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for EMS. Columns: []
+[2024-08-22T13:21:28.627+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho EMS: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:29.540+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:29,540 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:29.542+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:29,541 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for EPH. Columns: []
+[2024-08-22T13:21:29.543+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho EPH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:42.032+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:42,032 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:42.034+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:42,034 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for FT1. Columns: []
+[2024-08-22T13:21:42.034+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho FT1: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:42.449+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:42,449 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:21:42.450+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:42,450 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for FTI. Columns: []
+[2024-08-22T13:21:42.452+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho FTI: 'dict' object has no attribute 'empty'
+[2024-08-22T13:21:43.174+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:43,174 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for FTS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:43.174+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho FTS: 'listInsiderDealing'
+[2024-08-22T13:21:43.533+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:43,533 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for G20. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:43.534+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho G20: 'listInsiderDealing'
+[2024-08-22T13:21:43.853+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:43,853 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for G36. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:43.854+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho G36: 'listInsiderDealing'
+[2024-08-22T13:21:44.295+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:44,295 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GAB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:44.296+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GAB: 'listInsiderDealing'
+[2024-08-22T13:21:44.794+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:44,794 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GAS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:44.795+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GAS: 'listInsiderDealing'
+[2024-08-22T13:21:45.105+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:45,105 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GCB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:45.106+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GCB: 'listInsiderDealing'
+[2024-08-22T13:21:45.433+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:45,433 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GCF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:45.434+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GCF: 'listInsiderDealing'
+[2024-08-22T13:21:45.741+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:45,740 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GDA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:45.742+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GDA: 'listInsiderDealing'
+[2024-08-22T13:21:46.082+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:46,082 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GDT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:46.083+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GDT: 'listInsiderDealing'
+[2024-08-22T13:21:46.419+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:46,419 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GDW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:46.420+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GDW: 'listInsiderDealing'
+[2024-08-22T13:21:46.793+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:46,793 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GEE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:46.794+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GEE: 'listInsiderDealing'
+[2024-08-22T13:21:47.128+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:47,128 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GEG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:47.130+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GEG: 'listInsiderDealing'
+[2024-08-22T13:21:47.496+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:47,496 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GER. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:47.497+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GER: 'listInsiderDealing'
+[2024-08-22T13:21:47.828+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:47,828 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GEX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:47.828+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GEX: 'listInsiderDealing'
+[2024-08-22T13:21:48.286+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:48,286 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GGG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:48.287+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GGG: 'listInsiderDealing'
+[2024-08-22T13:21:48.689+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:48,689 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GH3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:48.689+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GH3: 'listInsiderDealing'
+[2024-08-22T13:21:49.041+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:49,041 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:49.041+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GHC: 'listInsiderDealing'
+[2024-08-22T13:21:49.351+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:49,351 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:49.352+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GIC: 'listInsiderDealing'
+[2024-08-22T13:21:49.729+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:49,729 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GIL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:49.730+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GIL: 'listInsiderDealing'
+[2024-08-22T13:21:50.051+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:50,051 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GKM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:50.051+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GKM: 'listInsiderDealing'
+[2024-08-22T13:21:50.377+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:50,377 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GLC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:50.378+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GLC: 'listInsiderDealing'
+[2024-08-22T13:21:50.694+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:50,694 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:50.710+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GLT: 'listInsiderDealing'
+[2024-08-22T13:21:51.112+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:51,112 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GLW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:51.113+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GLW: 'listInsiderDealing'
+[2024-08-22T13:21:51.554+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:51,553 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GMA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:51.554+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GMA: 'listInsiderDealing'
+[2024-08-22T13:21:51.921+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:51,921 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:51.922+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GMC: 'listInsiderDealing'
+[2024-08-22T13:21:52.280+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:52,280 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GMD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:52.281+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GMD: 'listInsiderDealing'
+[2024-08-22T13:21:52.670+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:52,670 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GMH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:52.670+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GMH: 'listInsiderDealing'
+[2024-08-22T13:21:52.996+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:52,996 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GMX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:52.996+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GMX: 'listInsiderDealing'
+[2024-08-22T13:21:53.323+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:53,323 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GND. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:53.324+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GND: 'listInsiderDealing'
+[2024-08-22T13:21:53.685+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:53,685 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:53.687+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GPC: 'listInsiderDealing'
+[2024-08-22T13:21:54.022+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:54,022 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GSM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:54.023+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GSM: 'listInsiderDealing'
+[2024-08-22T13:21:54.371+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:54,370 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:54.371+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GSP: 'listInsiderDealing'
+[2024-08-22T13:21:54.697+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:54,697 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GTA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:54.698+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GTA: 'listInsiderDealing'
+[2024-08-22T13:21:55.014+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:55,014 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GTD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:55.014+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GTD: 'listInsiderDealing'
+[2024-08-22T13:21:55.338+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:55,338 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GTS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:55.339+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GTS: 'listInsiderDealing'
+[2024-08-22T13:21:55.673+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:55,673 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GTT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:55.674+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GTT: 'listInsiderDealing'
+[2024-08-22T13:21:56.006+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:56,006 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GVR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:56.007+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GVR: 'listInsiderDealing'
+[2024-08-22T13:21:56.378+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:56,378 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for GVT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:56.379+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho GVT: 'listInsiderDealing'
+[2024-08-22T13:21:56.973+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:56,973 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for H11. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:56.973+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho H11: 'listInsiderDealing'
+[2024-08-22T13:21:57.310+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:57,310 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:57.311+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAC: 'listInsiderDealing'
+[2024-08-22T13:21:57.646+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:57,646 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:57.647+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAD: 'listInsiderDealing'
+[2024-08-22T13:21:57.975+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:57,975 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:57.976+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAF: 'listInsiderDealing'
+[2024-08-22T13:21:58.296+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:58,296 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:58.297+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAG: 'listInsiderDealing'
+[2024-08-22T13:21:58.641+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:58,641 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:58.642+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAH: 'listInsiderDealing'
+[2024-08-22T13:21:58.975+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:58,975 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:58.976+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAI: 'listInsiderDealing'
+[2024-08-22T13:21:59.323+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:21:59,322 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HAM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:21:59.323+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAM: 'listInsiderDealing'
+[2024-08-22T13:22:01.998+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:01,998 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:01.999+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:01,999 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HAV. Columns: []
+[2024-08-22T13:22:02.000+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HAV: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:03.653+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:03,653 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:03.654+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:03,654 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HBH. Columns: []
+[2024-08-22T13:22:03.655+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HBH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:18.878+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:18,878 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:18.879+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:18,879 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HHN. Columns: []
+[2024-08-22T13:22:18.880+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HHN: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:30.472+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:30,472 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:30.474+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:30,473 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HNB. Columns: []
+[2024-08-22T13:22:30.475+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HNB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:33.026+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:33,026 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:33.028+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:33,027 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HNP. Columns: []
+[2024-08-22T13:22:33.030+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HNP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:33.407+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:33,406 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:33.408+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:33,408 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HNR. Columns: []
+[2024-08-22T13:22:33.409+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HNR: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:39.962+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:39,962 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:39.963+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:39,963 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HRT. Columns: []
+[2024-08-22T13:22:39.964+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HRT: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:41.970+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:41,970 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:41.971+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:41,971 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HSM. Columns: []
+[2024-08-22T13:22:41.973+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HSM: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:42.347+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:42,347 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:22:42.348+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:42,348 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for HSP. Columns: []
+[2024-08-22T13:22:42.349+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HSP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:22:42.669+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:42,669 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HSV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:42.670+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HSV: 'listInsiderDealing'
+[2024-08-22T13:22:42.982+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:42,982 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HT1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:42.983+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HT1: 'listInsiderDealing'
+[2024-08-22T13:22:43.313+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:43,312 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:43.313+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTC: 'listInsiderDealing'
+[2024-08-22T13:22:43.603+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:43,603 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:43.604+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTE: 'listInsiderDealing'
+[2024-08-22T13:22:43.906+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:43,906 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:43.906+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTG: 'listInsiderDealing'
+[2024-08-22T13:22:44.207+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:44,206 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:44.207+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTI: 'listInsiderDealing'
+[2024-08-22T13:22:44.555+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:44,555 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:44.556+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTL: 'listInsiderDealing'
+[2024-08-22T13:22:44.872+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:44,872 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:44.872+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTM: 'listInsiderDealing'
+[2024-08-22T13:22:45.184+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:45,184 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:45.185+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTN: 'listInsiderDealing'
+[2024-08-22T13:22:45.499+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:45,499 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:45.499+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTP: 'listInsiderDealing'
+[2024-08-22T13:22:45.840+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:45,840 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:45.841+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTR: 'listInsiderDealing'
+[2024-08-22T13:22:46.148+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:46,148 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:46.149+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTT: 'listInsiderDealing'
+[2024-08-22T13:22:46.446+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:46,445 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HTV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:46.446+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HTV: 'listInsiderDealing'
+[2024-08-22T13:22:46.749+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:46,749 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HU1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:46.751+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HU1: 'listInsiderDealing'
+[2024-08-22T13:22:47.039+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:47,039 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HU3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:47.040+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HU3: 'listInsiderDealing'
+[2024-08-22T13:22:47.332+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:47,332 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HU4. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:47.332+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HU4: 'listInsiderDealing'
+[2024-08-22T13:22:47.615+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:47,615 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HU6. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:47.616+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HU6: 'listInsiderDealing'
+[2024-08-22T13:22:47.913+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:47,913 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HUB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:47.913+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HUB: 'listInsiderDealing'
+[2024-08-22T13:22:48.237+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:48,237 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HUG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:48.238+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HUG: 'listInsiderDealing'
+[2024-08-22T13:22:48.593+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:48,593 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HUT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:48.593+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HUT: 'listInsiderDealing'
+[2024-08-22T13:22:48.982+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:48,982 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:48.983+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVA: 'listInsiderDealing'
+[2024-08-22T13:22:49.303+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:49,303 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:49.304+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVG: 'listInsiderDealing'
+[2024-08-22T13:22:49.639+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:49,639 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:49.639+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVH: 'listInsiderDealing'
+[2024-08-22T13:22:49.928+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:49,928 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:49.929+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVN: 'listInsiderDealing'
+[2024-08-22T13:22:50.234+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:50,234 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:50.234+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVT: 'listInsiderDealing'
+[2024-08-22T13:22:50.548+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:50,548 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HVX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:50.548+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HVX: 'listInsiderDealing'
+[2024-08-22T13:22:50.873+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:50,873 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for HWS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:50.874+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho HWS: 'listInsiderDealing'
+[2024-08-22T13:22:51.146+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:51,146 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:51.147+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IBC: 'listInsiderDealing'
+[2024-08-22T13:22:51.475+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:51,475 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IBD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:51.476+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IBD: 'listInsiderDealing'
+[2024-08-22T13:22:51.804+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:51,804 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:51.805+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICC: 'listInsiderDealing'
+[2024-08-22T13:22:52.105+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:52,105 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:52.106+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICF: 'listInsiderDealing'
+[2024-08-22T13:22:52.474+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:52,473 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:52.474+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICG: 'listInsiderDealing'
+[2024-08-22T13:22:53.004+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:53,004 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:53.005+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICI: 'listInsiderDealing'
+[2024-08-22T13:22:53.307+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:53,306 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:53.307+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICN: 'listInsiderDealing'
+[2024-08-22T13:22:53.613+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:53,613 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ICT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:53.613+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ICT: 'listInsiderDealing'
+[2024-08-22T13:22:53.928+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:53,928 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:53.929+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IDC: 'listInsiderDealing'
+[2024-08-22T13:22:54.246+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:54,246 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IDI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:54.247+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IDI: 'listInsiderDealing'
+[2024-08-22T13:22:54.558+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:54,558 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IDJ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:54.559+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IDJ: 'listInsiderDealing'
+[2024-08-22T13:22:54.917+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:54,917 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IDP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:54.918+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IDP: 'listInsiderDealing'
+[2024-08-22T13:22:55.205+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:55,205 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IDV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:55.207+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IDV: 'listInsiderDealing'
+[2024-08-22T13:22:55.530+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:55,530 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IFS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:55.531+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IFS: 'listInsiderDealing'
+[2024-08-22T13:22:55.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:55,832 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IHK. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:55.832+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IHK: 'listInsiderDealing'
+[2024-08-22T13:22:56.187+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:56,187 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IJC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:56.188+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IJC: 'listInsiderDealing'
+[2024-08-22T13:22:56.560+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:56,560 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ILA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:56.560+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ILA: 'listInsiderDealing'
+[2024-08-22T13:22:57.022+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:57,021 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ILB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:57.023+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ILB: 'listInsiderDealing'
+[2024-08-22T13:22:57.328+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:57,328 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ILC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:57.330+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ILC: 'listInsiderDealing'
+[2024-08-22T13:22:57.632+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:57,632 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ILS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:57.633+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ILS: 'listInsiderDealing'
+[2024-08-22T13:22:57.926+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:57,926 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IME. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:57.927+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IME: 'listInsiderDealing'
+[2024-08-22T13:22:58.232+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:58,232 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IMP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:58.234+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IMP: 'listInsiderDealing'
+[2024-08-22T13:22:58.527+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:58,527 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IN4. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:58.528+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IN4: 'listInsiderDealing'
+[2024-08-22T13:22:58.845+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:58,845 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for INC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:58.846+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho INC: 'listInsiderDealing'
+[2024-08-22T13:22:59.189+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:59,189 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for INN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:59.190+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho INN: 'listInsiderDealing'
+[2024-08-22T13:22:59.479+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:22:59,479 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for IPA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:22:59.480+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho IPA: 'listInsiderDealing'
+[2024-08-22T13:23:05.693+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:05,693 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:23:05.694+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:05,694 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for KCB. Columns: []
+[2024-08-22T13:23:05.695+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho KCB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:23:17.289+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:17,289 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:23:17.291+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:17,291 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for KTC. Columns: []
+[2024-08-22T13:23:17.292+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho KTC: 'dict' object has no attribute 'empty'
+[2024-08-22T13:23:18.800+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:18,800 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:23:18.801+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:18,801 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for KTW. Columns: []
+[2024-08-22T13:23:18.801+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho KTW: 'dict' object has no attribute 'empty'
+[2024-08-22T13:23:31.149+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:31,149 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:23:31.150+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:31,150 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for LDW. Columns: []
+[2024-08-22T13:23:31.151+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho LDW: 'dict' object has no attribute 'empty'
+[2024-08-22T13:23:42.352+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:42,352 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:23:42.353+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:42,353 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for LQN. Columns: []
+[2024-08-22T13:23:42.354+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho LQN: 'dict' object has no attribute 'empty'
+[2024-08-22T13:23:43.600+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:43,600 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for LTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:43.600+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho LTC: 'listInsiderDealing'
+[2024-08-22T13:23:43.985+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:43,985 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for LTG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:43.985+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho LTG: 'listInsiderDealing'
+[2024-08-22T13:23:44.317+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:44,317 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for LUT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:44.318+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho LUT: 'listInsiderDealing'
+[2024-08-22T13:23:44.690+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:44,690 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for M10. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:44.691+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho M10: 'listInsiderDealing'
+[2024-08-22T13:23:45.034+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:45,034 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MA1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:45.035+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MA1: 'listInsiderDealing'
+[2024-08-22T13:23:45.634+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:45,634 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MAC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:45.635+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MAC: 'listInsiderDealing'
+[2024-08-22T13:23:46.066+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:46,066 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MAS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:46.067+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MAS: 'listInsiderDealing'
+[2024-08-22T13:23:46.429+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:46,429 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MBB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:46.430+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MBB: 'listInsiderDealing'
+[2024-08-22T13:23:46.829+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:46,829 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MBG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:46.830+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MBG: 'listInsiderDealing'
+[2024-08-22T13:23:47.170+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:47,170 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MBN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:47.171+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MBN: 'listInsiderDealing'
+[2024-08-22T13:23:47.523+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:47,522 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MBS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:47.523+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MBS: 'listInsiderDealing'
+[2024-08-22T13:23:47.871+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:47,871 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:47.873+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCC: 'listInsiderDealing'
+[2024-08-22T13:23:48.208+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:48,208 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:48.209+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCD: 'listInsiderDealing'
+[2024-08-22T13:23:48.543+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:48,543 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:48.543+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCF: 'listInsiderDealing'
+[2024-08-22T13:23:48.895+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:48,895 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:48.897+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCG: 'listInsiderDealing'
+[2024-08-22T13:23:49.728+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:49,727 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:49.728+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCH: 'listInsiderDealing'
+[2024-08-22T13:23:50.095+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:50,094 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:50.095+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCI: 'listInsiderDealing'
+[2024-08-22T13:23:50.445+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:50,445 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:50.446+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCM: 'listInsiderDealing'
+[2024-08-22T13:23:50.802+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:50,802 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:50.804+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCO: 'listInsiderDealing'
+[2024-08-22T13:23:51.163+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:51,162 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MCP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:51.164+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MCP: 'listInsiderDealing'
+[2024-08-22T13:23:51.481+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:51,481 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MDA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:51.482+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MDA: 'listInsiderDealing'
+[2024-08-22T13:23:51.856+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:51,856 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:51.857+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MDC: 'listInsiderDealing'
+[2024-08-22T13:23:52.205+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:52,205 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MDF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:52.206+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MDF: 'listInsiderDealing'
+[2024-08-22T13:23:52.576+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:52,576 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MDG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:52.577+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MDG: 'listInsiderDealing'
+[2024-08-22T13:23:53.073+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:53,073 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MEC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:53.074+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MEC: 'listInsiderDealing'
+[2024-08-22T13:23:53.496+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:53,496 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MED. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:53.496+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MED: 'listInsiderDealing'
+[2024-08-22T13:23:53.943+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:53,943 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MEF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:53.944+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MEF: 'listInsiderDealing'
+[2024-08-22T13:23:54.263+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:54,263 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MEL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:54.264+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MEL: 'listInsiderDealing'
+[2024-08-22T13:23:54.633+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:54,633 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MES. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:54.633+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MES: 'listInsiderDealing'
+[2024-08-22T13:23:55.001+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:55,000 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MFS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:55.002+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MFS: 'listInsiderDealing'
+[2024-08-22T13:23:55.340+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:55,339 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:55.340+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MGC: 'listInsiderDealing'
+[2024-08-22T13:23:55.668+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:55,668 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MGG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:55.668+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MGG: 'listInsiderDealing'
+[2024-08-22T13:23:56.000+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:56,000 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MGR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:56.000+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MGR: 'listInsiderDealing'
+[2024-08-22T13:23:56.321+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:56,321 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MH3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:56.322+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MH3: 'listInsiderDealing'
+[2024-08-22T13:23:56.648+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:56,648 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MHC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:56.649+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MHC: 'listInsiderDealing'
+[2024-08-22T13:23:57.022+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:57,022 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MHL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:57.023+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MHL: 'listInsiderDealing'
+[2024-08-22T13:23:57.440+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:57,440 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MIC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:57.441+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MIC: 'listInsiderDealing'
+[2024-08-22T13:23:57.848+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:57,848 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MIE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:57.849+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MIE: 'listInsiderDealing'
+[2024-08-22T13:23:58.214+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:58,214 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MIG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:58.215+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MIG: 'listInsiderDealing'
+[2024-08-22T13:23:58.551+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:58,551 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MIM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:58.553+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MIM: 'listInsiderDealing'
+[2024-08-22T13:23:58.880+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:58,880 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MKP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:58.881+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MKP: 'listInsiderDealing'
+[2024-08-22T13:23:59.221+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:59,221 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MKV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:59.222+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MKV: 'listInsiderDealing'
+[2024-08-22T13:23:59.581+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:23:59,581 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for MLC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:23:59.583+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MLC: 'listInsiderDealing'
+[2024-08-22T13:24:02.830+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:02,830 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:02.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:02,831 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for MPY. Columns: []
+[2024-08-22T13:24:02.832+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MPY: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:07.582+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:07,582 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:07.583+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:07,583 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for MTB. Columns: []
+[2024-08-22T13:24:07.583+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MTB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:08.053+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:08,053 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:08.054+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:08,054 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for MTC. Columns: []
+[2024-08-22T13:24:08.055+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MTC: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:10.307+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:10,307 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:10.308+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:10,308 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for MTS. Columns: []
+[2024-08-22T13:24:10.309+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MTS: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:10.716+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:10,716 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:10.717+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:10,717 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for MTV. Columns: []
+[2024-08-22T13:24:10.719+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho MTV: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:15.633+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:15,632 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:15.633+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:15,633 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NAU. Columns: []
+[2024-08-22T13:24:15.634+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NAU: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:17.806+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:17,806 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:17.807+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:17,807 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NBE. Columns: []
+[2024-08-22T13:24:17.808+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NBE: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:20.029+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:20,028 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:20.030+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:20,030 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NCS. Columns: []
+[2024-08-22T13:24:20.030+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NCS: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:23.416+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:23,416 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:23.418+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:23,418 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NDT. Columns: []
+[2024-08-22T13:24:23.420+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NDT: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:38.060+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:38,059 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:38.061+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:38,061 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NS2. Columns: []
+[2024-08-22T13:24:38.062+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NS2: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:40.518+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:40,518 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:40.520+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:40,520 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NSS. Columns: []
+[2024-08-22T13:24:40.524+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NSS: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:46.664+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:46,664 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:24:46.666+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:46,666 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for NVP. Columns: []
+[2024-08-22T13:24:46.667+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho NVP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:24:49.083+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:49,083 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for OCB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:49.084+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho OCB: 'listInsiderDealing'
+[2024-08-22T13:24:49.683+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:49,683 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for OCH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:49.684+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho OCH: 'listInsiderDealing'
+[2024-08-22T13:24:50.003+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:50,003 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ODE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:50.004+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ODE: 'listInsiderDealing'
+[2024-08-22T13:24:50.399+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:50,399 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for OGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:50.400+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho OGC: 'listInsiderDealing'
+[2024-08-22T13:24:50.734+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:50,733 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for OIL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:50.734+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho OIL: 'listInsiderDealing'
+[2024-08-22T13:24:51.081+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:51,081 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ONE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:51.082+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ONE: 'listInsiderDealing'
+[2024-08-22T13:24:51.474+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:51,474 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ONW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:51.474+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ONW: 'listInsiderDealing'
+[2024-08-22T13:24:51.835+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:51,835 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for OPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:51.836+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho OPC: 'listInsiderDealing'
+[2024-08-22T13:24:52.169+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:52,169 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for ORS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:52.170+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho ORS: 'listInsiderDealing'
+[2024-08-22T13:24:52.526+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:52,525 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:52.526+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAC: 'listInsiderDealing'
+[2024-08-22T13:24:52.813+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:52,813 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:52.814+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAI: 'listInsiderDealing'
+[2024-08-22T13:24:53.138+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:53,138 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:53.138+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAN: 'listInsiderDealing'
+[2024-08-22T13:24:53.493+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:53,492 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:53.494+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAP: 'listInsiderDealing'
+[2024-08-22T13:24:53.865+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:53,865 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:53.865+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAS: 'listInsiderDealing'
+[2024-08-22T13:24:54.166+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:54,166 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PAT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:54.167+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PAT: 'listInsiderDealing'
+[2024-08-22T13:24:54.456+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:54,455 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:54.456+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PBC: 'listInsiderDealing'
+[2024-08-22T13:24:54.770+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:54,770 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PBP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:54.771+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PBP: 'listInsiderDealing'
+[2024-08-22T13:24:55.120+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:55,120 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PBT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:55.121+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PBT: 'listInsiderDealing'
+[2024-08-22T13:24:55.447+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:55,447 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PC1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:55.447+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PC1: 'listInsiderDealing'
+[2024-08-22T13:24:55.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:55,832 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:55.833+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCC: 'listInsiderDealing'
+[2024-08-22T13:24:56.271+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:56,271 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:56.272+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCE: 'listInsiderDealing'
+[2024-08-22T13:24:56.594+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:56,594 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:56.595+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCF: 'listInsiderDealing'
+[2024-08-22T13:24:56.931+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:56,930 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:56.932+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCG: 'listInsiderDealing'
+[2024-08-22T13:24:57.294+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:57,294 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:57.296+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCH: 'listInsiderDealing'
+[2024-08-22T13:24:57.630+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:57,630 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:57.631+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCM: 'listInsiderDealing'
+[2024-08-22T13:24:57.952+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:57,952 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:57.953+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCN: 'listInsiderDealing'
+[2024-08-22T13:24:58.255+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:58,255 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PCT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:58.256+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PCT: 'listInsiderDealing'
+[2024-08-22T13:24:58.560+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:58,560 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PDB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:58.561+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PDB: 'listInsiderDealing'
+[2024-08-22T13:24:58.857+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:58,857 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PDC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:58.858+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PDC: 'listInsiderDealing'
+[2024-08-22T13:24:59.196+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:59,196 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PDN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:59.197+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PDN: 'listInsiderDealing'
+[2024-08-22T13:24:59.528+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:24:59,528 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PDR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:24:59.529+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PDR: 'listInsiderDealing'
+[2024-08-22T13:25:00.998+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:00,998 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:01.000+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:00,999 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PEG. Columns: []
+[2024-08-22T13:25:01.001+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PEG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:13.897+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:13,897 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:13.898+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:13,898 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PLO. Columns: []
+[2024-08-22T13:25:13.899+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PLO: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:20.555+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:20,555 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:20.557+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:20,556 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PNP. Columns: []
+[2024-08-22T13:25:20.558+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PNP: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:27.384+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:27,383 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:27.385+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:27,385 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PQN. Columns: []
+[2024-08-22T13:25:27.386+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PQN: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:34.174+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:34,174 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:34.175+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:34,175 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PSN. Columns: []
+[2024-08-22T13:25:34.176+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PSN: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:34.991+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:34,991 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:34.993+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:34,992 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PSW. Columns: []
+[2024-08-22T13:25:34.993+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PSW: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:39.292+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:39,292 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:25:39.294+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:39,294 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for PTN. Columns: []
+[2024-08-22T13:25:39.295+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PTN: 'dict' object has no attribute 'empty'
+[2024-08-22T13:25:44.854+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:44,854 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:44.855+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVE: 'listInsiderDealing'
+[2024-08-22T13:25:45.204+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:45,204 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:45.205+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVG: 'listInsiderDealing'
+[2024-08-22T13:25:45.531+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:45,531 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:45.532+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVH: 'listInsiderDealing'
+[2024-08-22T13:25:45.853+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:45,853 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:45.853+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVI: 'listInsiderDealing'
+[2024-08-22T13:25:46.179+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:46,179 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:46.180+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVL: 'listInsiderDealing'
+[2024-08-22T13:25:46.513+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:46,513 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:46.514+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVM: 'listInsiderDealing'
+[2024-08-22T13:25:46.835+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:46,835 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVO. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:46.836+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVO: 'listInsiderDealing'
+[2024-08-22T13:25:47.191+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:47,191 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:47.192+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVP: 'listInsiderDealing'
+[2024-08-22T13:25:47.546+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:47,546 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:47.547+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVR: 'listInsiderDealing'
+[2024-08-22T13:25:47.878+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:47,878 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:47.878+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVS: 'listInsiderDealing'
+[2024-08-22T13:25:48.291+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:48,291 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:48.293+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVT: 'listInsiderDealing'
+[2024-08-22T13:25:48.706+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:48,706 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:48.707+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVV: 'listInsiderDealing'
+[2024-08-22T13:25:49.025+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:49,024 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:49.025+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVX: 'listInsiderDealing'
+[2024-08-22T13:25:49.346+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:49,346 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PVY. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:49.347+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PVY: 'listInsiderDealing'
+[2024-08-22T13:25:49.679+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:49,679 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PWA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:49.680+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PWA: 'listInsiderDealing'
+[2024-08-22T13:25:50.028+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:50,028 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PWS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:50.029+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PWS: 'listInsiderDealing'
+[2024-08-22T13:25:50.376+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:50,376 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PX1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:50.377+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PX1: 'listInsiderDealing'
+[2024-08-22T13:25:50.727+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:50,727 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:50.731+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXA: 'listInsiderDealing'
+[2024-08-22T13:25:51.077+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:51,077 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:51.078+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXC: 'listInsiderDealing'
+[2024-08-22T13:25:51.397+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:51,396 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:51.398+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXI: 'listInsiderDealing'
+[2024-08-22T13:25:51.758+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:51,758 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:51.759+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXL: 'listInsiderDealing'
+[2024-08-22T13:25:52.160+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:52,160 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:52.161+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXM: 'listInsiderDealing'
+[2024-08-22T13:25:52.629+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:52,629 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:52.630+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXS: 'listInsiderDealing'
+[2024-08-22T13:25:52.968+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:52,968 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for PXT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:52.969+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho PXT: 'listInsiderDealing'
+[2024-08-22T13:25:53.323+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:53,323 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QBS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:53.330+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QBS: 'listInsiderDealing'
+[2024-08-22T13:25:53.680+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:53,680 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QCC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:53.680+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QCC: 'listInsiderDealing'
+[2024-08-22T13:25:54.025+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:54,025 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QCG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:54.025+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QCG: 'listInsiderDealing'
+[2024-08-22T13:25:54.370+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:54,370 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QHD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:54.386+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QHD: 'listInsiderDealing'
+[2024-08-22T13:25:54.755+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:54,755 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QHW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:54.756+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QHW: 'listInsiderDealing'
+[2024-08-22T13:25:55.078+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:55,078 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:55.079+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QNC: 'listInsiderDealing'
+[2024-08-22T13:25:55.398+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:55,397 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QNS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:55.398+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QNS: 'listInsiderDealing'
+[2024-08-22T13:25:55.727+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:55,727 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:55.727+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QNT: 'listInsiderDealing'
+[2024-08-22T13:25:56.125+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:56,125 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QNU. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:56.126+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QNU: 'listInsiderDealing'
+[2024-08-22T13:25:56.485+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:56,484 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QNW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:56.486+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QNW: 'listInsiderDealing'
+[2024-08-22T13:25:56.886+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:56,886 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:56.886+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QPH: 'listInsiderDealing'
+[2024-08-22T13:25:57.253+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:57,253 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QSP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:57.254+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QSP: 'listInsiderDealing'
+[2024-08-22T13:25:57.610+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:57,610 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QST. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:57.611+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QST: 'listInsiderDealing'
+[2024-08-22T13:25:58.021+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:58,020 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QTC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:58.021+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QTC: 'listInsiderDealing'
+[2024-08-22T13:25:58.366+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:58,366 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for QTP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:58.367+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho QTP: 'listInsiderDealing'
+[2024-08-22T13:25:58.713+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:58,713 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for RAL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:58.714+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho RAL: 'listInsiderDealing'
+[2024-08-22T13:25:59.098+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:59,098 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for RAT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:59.099+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho RAT: 'listInsiderDealing'
+[2024-08-22T13:25:59.443+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:25:59,443 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for RBC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:25:59.444+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho RBC: 'listInsiderDealing'
+[2024-08-22T13:26:20.869+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:20,869 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:26:20.870+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:20,870 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for SCY. Columns: []
+[2024-08-22T13:26:20.871+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SCY: 'dict' object has no attribute 'empty'
+[2024-08-22T13:26:44.887+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:44,887 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SID. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:44.889+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SID: 'listInsiderDealing'
+[2024-08-22T13:26:45.236+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:45,236 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SIG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:45.237+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SIG: 'listInsiderDealing'
+[2024-08-22T13:26:45.512+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:45,512 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SII. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:45.513+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SII: 'listInsiderDealing'
+[2024-08-22T13:26:45.830+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:45,830 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SIP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:45.830+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SIP: 'listInsiderDealing'
+[2024-08-22T13:26:46.139+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:46,139 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SIV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:46.140+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SIV: 'listInsiderDealing'
+[2024-08-22T13:26:46.511+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:46,511 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJ1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:46.512+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJ1: 'listInsiderDealing'
+[2024-08-22T13:26:46.816+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:46,816 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:46.816+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJC: 'listInsiderDealing'
+[2024-08-22T13:26:47.131+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:47,130 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:47.132+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJD: 'listInsiderDealing'
+[2024-08-22T13:26:47.447+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:47,446 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJE. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:47.447+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJE: 'listInsiderDealing'
+[2024-08-22T13:26:47.762+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:47,761 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:47.762+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJF: 'listInsiderDealing'
+[2024-08-22T13:26:48.099+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:48,099 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:48.100+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJG: 'listInsiderDealing'
+[2024-08-22T13:26:48.637+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:48,636 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:48.639+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJM: 'listInsiderDealing'
+[2024-08-22T13:26:48.996+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:48,996 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SJS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:48.997+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SJS: 'listInsiderDealing'
+[2024-08-22T13:26:49.341+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:49,341 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SKG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:49.342+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SKG: 'listInsiderDealing'
+[2024-08-22T13:26:49.681+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:49,680 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SKH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:49.682+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SKH: 'listInsiderDealing'
+[2024-08-22T13:26:50.037+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:50,036 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SKN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:50.040+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SKN: 'listInsiderDealing'
+[2024-08-22T13:26:50.423+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:50,423 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SKV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:50.428+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SKV: 'listInsiderDealing'
+[2024-08-22T13:26:50.773+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:50,773 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SLS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:50.774+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SLS: 'listInsiderDealing'
+[2024-08-22T13:26:51.106+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:51,106 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SMA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:51.107+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SMA: 'listInsiderDealing'
+[2024-08-22T13:26:51.421+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:51,421 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SMB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:51.422+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SMB: 'listInsiderDealing'
+[2024-08-22T13:26:51.727+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:51,727 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:51.729+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SMC: 'listInsiderDealing'
+[2024-08-22T13:26:52.062+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:52,062 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SMN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:52.064+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SMN: 'listInsiderDealing'
+[2024-08-22T13:26:52.571+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:52,571 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SMT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:52.573+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SMT: 'listInsiderDealing'
+[2024-08-22T13:26:53.073+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:53,073 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:53.075+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SNC: 'listInsiderDealing'
+[2024-08-22T13:26:53.365+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:53,365 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SNZ. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:53.366+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SNZ: 'listInsiderDealing'
+[2024-08-22T13:26:53.753+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:53,752 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SP2. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:53.754+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SP2: 'listInsiderDealing'
+[2024-08-22T13:26:54.083+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:54,083 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:54.084+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPB: 'listInsiderDealing'
+[2024-08-22T13:26:54.423+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:54,423 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:54.424+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPC: 'listInsiderDealing'
+[2024-08-22T13:26:54.734+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:54,734 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPD. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:54.734+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPD: 'listInsiderDealing'
+[2024-08-22T13:26:55.024+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:55,024 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:55.025+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPH: 'listInsiderDealing'
+[2024-08-22T13:26:55.335+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:55,334 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:55.336+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPI: 'listInsiderDealing'
+[2024-08-22T13:26:55.652+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:55,652 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:55.653+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPM: 'listInsiderDealing'
+[2024-08-22T13:26:55.975+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:55,974 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SPV. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:55.976+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SPV: 'listInsiderDealing'
+[2024-08-22T13:26:56.334+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:56,334 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SQC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:56.335+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SQC: 'listInsiderDealing'
+[2024-08-22T13:26:56.713+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:56,713 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SRA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:56.714+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SRA: 'listInsiderDealing'
+[2024-08-22T13:26:57.133+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:57,133 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SRB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:57.134+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SRB: 'listInsiderDealing'
+[2024-08-22T13:26:57.480+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:57,480 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:57.481+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SRC: 'listInsiderDealing'
+[2024-08-22T13:26:57.815+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:57,815 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SRF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:57.815+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SRF: 'listInsiderDealing'
+[2024-08-22T13:26:58.143+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:58,143 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SRT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:58.144+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SRT: 'listInsiderDealing'
+[2024-08-22T13:26:58.454+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:58,454 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SSB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:58.455+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SSB: 'listInsiderDealing'
+[2024-08-22T13:26:58.775+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:58,775 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:58.777+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SSC: 'listInsiderDealing'
+[2024-08-22T13:26:59.090+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:59,090 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SSF. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:59.091+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SSF: 'listInsiderDealing'
+[2024-08-22T13:26:59.409+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:26:59,409 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for SSG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:26:59.410+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SSG: 'listInsiderDealing'
+[2024-08-22T13:27:07.152+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:07,152 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:27:07.153+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:07,153 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for SVG. Columns: []
+[2024-08-22T13:27:07.154+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho SVG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:27:15.745+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:15,745 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:27:15.746+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:15,746 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TBH. Columns: []
+[2024-08-22T13:27:15.747+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TBH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:27:17.633+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:17,633 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:27:17.634+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:17,634 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TBW. Columns: []
+[2024-08-22T13:27:17.635+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TBW: 'dict' object has no attribute 'empty'
+[2024-08-22T13:27:20.920+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:20,919 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:27:20.922+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:20,922 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TCK. Columns: []
+[2024-08-22T13:27:20.924+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TCK: 'dict' object has no attribute 'empty'
+[2024-08-22T13:27:40.023+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:40,023 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:27:40.025+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:40,025 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TKA. Columns: []
+[2024-08-22T13:27:40.026+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TKA: 'dict' object has no attribute 'empty'
+[2024-08-22T13:27:42.997+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:42,997 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TLH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:42.998+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TLH: 'listInsiderDealing'
+[2024-08-22T13:27:43.318+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:43,318 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TLI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:43.318+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TLI: 'listInsiderDealing'
+[2024-08-22T13:27:43.635+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:43,634 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TLP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:43.635+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TLP: 'listInsiderDealing'
+[2024-08-22T13:27:44.098+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:44,098 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TLT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:44.099+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TLT: 'listInsiderDealing'
+[2024-08-22T13:27:44.527+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:44,527 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:44.528+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMB: 'listInsiderDealing'
+[2024-08-22T13:27:45.353+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:45,353 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:45.354+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMC: 'listInsiderDealing'
+[2024-08-22T13:27:45.891+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:45,891 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:45.891+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMG: 'listInsiderDealing'
+[2024-08-22T13:27:46.172+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:46,172 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:46.174+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMP: 'listInsiderDealing'
+[2024-08-22T13:27:46.521+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:46,521 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:46.521+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMS: 'listInsiderDealing'
+[2024-08-22T13:27:46.882+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:46,882 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:46.883+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMT: 'listInsiderDealing'
+[2024-08-22T13:27:47.437+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:47,437 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:47.438+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMW: 'listInsiderDealing'
+[2024-08-22T13:27:47.820+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:47,820 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TMX. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:47.821+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TMX: 'listInsiderDealing'
+[2024-08-22T13:27:48.156+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:48,156 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TN1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:48.156+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TN1: 'listInsiderDealing'
+[2024-08-22T13:27:48.819+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:48,819 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:48.820+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNA: 'listInsiderDealing'
+[2024-08-22T13:27:49.578+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:49,578 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:49.579+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNB: 'listInsiderDealing'
+[2024-08-22T13:27:49.877+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:49,877 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:49.878+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNC: 'listInsiderDealing'
+[2024-08-22T13:27:50.176+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:50,176 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:50.178+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNG: 'listInsiderDealing'
+[2024-08-22T13:27:50.509+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:50,509 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:50.510+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNH: 'listInsiderDealing'
+[2024-08-22T13:27:50.817+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:50,817 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:50.817+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNI: 'listInsiderDealing'
+[2024-08-22T13:27:51.103+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:51,103 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNM. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:51.104+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNM: 'listInsiderDealing'
+[2024-08-22T13:27:51.424+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:51,424 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:51.424+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNP: 'listInsiderDealing'
+[2024-08-22T13:27:51.765+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:51,765 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:51.766+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNS: 'listInsiderDealing'
+[2024-08-22T13:27:52.071+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:52,070 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:52.071+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNT: 'listInsiderDealing'
+[2024-08-22T13:27:52.405+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:52,404 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TNW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:52.405+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TNW: 'listInsiderDealing'
+[2024-08-22T13:27:52.832+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:52,831 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TOP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:52.832+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TOP: 'listInsiderDealing'
+[2024-08-22T13:27:53.515+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:53,515 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TOS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:53.516+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TOS: 'listInsiderDealing'
+[2024-08-22T13:27:53.795+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:53,795 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TOT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:53.796+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TOT: 'listInsiderDealing'
+[2024-08-22T13:27:54.133+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:54,133 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TOW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:54.135+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TOW: 'listInsiderDealing'
+[2024-08-22T13:27:54.469+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:54,469 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TPB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:54.470+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TPB: 'listInsiderDealing'
+[2024-08-22T13:27:54.785+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:54,785 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TPC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:54.786+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TPC: 'listInsiderDealing'
+[2024-08-22T13:27:55.110+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:55,110 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TPH. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:55.111+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TPH: 'listInsiderDealing'
+[2024-08-22T13:27:55.435+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:55,435 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TPP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:55.437+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TPP: 'listInsiderDealing'
+[2024-08-22T13:27:55.775+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:55,775 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TPS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:55.776+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TPS: 'listInsiderDealing'
+[2024-08-22T13:27:56.119+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:56,119 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TQN. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:56.120+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TQN: 'listInsiderDealing'
+[2024-08-22T13:27:56.473+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:56,473 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TQW. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:56.474+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TQW: 'listInsiderDealing'
+[2024-08-22T13:27:56.873+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:56,873 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TR1. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:56.874+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TR1: 'listInsiderDealing'
+[2024-08-22T13:27:57.424+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:57,424 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TRA. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:57.425+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TRA: 'listInsiderDealing'
+[2024-08-22T13:27:57.741+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:57,741 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TRC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:57.742+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TRC: 'listInsiderDealing'
+[2024-08-22T13:27:58.051+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:58,051 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TRS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:58.052+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TRS: 'listInsiderDealing'
+[2024-08-22T13:27:58.336+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:58,336 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TRT. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:58.337+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TRT: 'listInsiderDealing'
+[2024-08-22T13:27:58.650+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:58,650 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TS3. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:58.651+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TS3: 'listInsiderDealing'
+[2024-08-22T13:27:58.996+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:58,996 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TS4. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:58.997+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TS4: 'listInsiderDealing'
+[2024-08-22T13:27:59.281+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:59,281 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TSB. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:59.282+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TSB: 'listInsiderDealing'
+[2024-08-22T13:27:59.576+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:27:59,576 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for TSC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:27:59.576+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TSC: 'listInsiderDealing'
+[2024-08-22T13:28:08.266+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:08,266 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:08.268+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:08,268 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TUG. Columns: []
+[2024-08-22T13:28:08.269+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TUG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:12.998+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:12,997 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:13.001+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:13,000 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TVH. Columns: []
+[2024-08-22T13:28:13.005+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TVH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:13.509+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:13,509 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:13.511+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:13,511 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for TVM. Columns: []
+[2024-08-22T13:28:13.512+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho TVM: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:17.401+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:17,401 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:17.402+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:17,402 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for UCT. Columns: []
+[2024-08-22T13:28:17.403+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho UCT: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:21.394+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:21,394 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:21.396+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:21,396 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for UPH. Columns: []
+[2024-08-22T13:28:21.397+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho UPH: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:26.410+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:26,410 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:26.411+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:26,411 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for VBG. Columns: []
+[2024-08-22T13:28:26.412+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VBG: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:31.939+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:31,939 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:31.942+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:31,942 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for VCE. Columns: []
+[2024-08-22T13:28:31.943+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VCE: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:36.350+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:36,350 - vnstock3.explorer.tcbs.company - WARNING - Columns to drop not found: "['no', 'ticker'] not found in axis"
+[2024-08-22T13:28:36.351+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:36,351 - vnstock3.explorer.tcbs.company - ERROR - 'dealAnnounceDate' column not found in DataFrame for VDB. Columns: []
+[2024-08-22T13:28:36.352+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VDB: 'dict' object has no attribute 'empty'
+[2024-08-22T13:28:43.791+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:43,791 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VFC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:43.791+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VFC: 'listInsiderDealing'
+[2024-08-22T13:28:44.128+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:44,128 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VFG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:44.131+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VFG: 'listInsiderDealing'
+[2024-08-22T13:28:44.510+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:44,510 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VFR. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:44.511+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VFR: 'listInsiderDealing'
+[2024-08-22T13:28:44.882+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:44,881 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VFS. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:44.882+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VFS: 'listInsiderDealing'
+[2024-08-22T13:28:45.200+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:45,200 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VGC. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:45.202+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VGC: 'listInsiderDealing'
+[2024-08-22T13:28:45.560+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:45,560 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VGG. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:45.561+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VGG: 'listInsiderDealing'
+[2024-08-22T13:28:45.919+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:45,919 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VGI. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:45.920+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VGI: 'listInsiderDealing'
+[2024-08-22T13:28:46.286+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:46,286 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VGL. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:46.287+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VGL: 'listInsiderDealing'
+[2024-08-22T13:28:46.301+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-08-22T13:28:46.575+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-08-22T13:28:46.664+0000] {logging_mixin.py:188} WARNING - 2024-08-22 13:28:46,664 - vnstock3.explorer.tcbs.company - ERROR - Error fetching insider deals data for VGP. Details: {
+  "message":"API rate limit exceeded"
+}
+[2024-08-22T13:28:46.673+0000] {logging_mixin.py:188} INFO - Lỗi khi thu thập dữ liệu cho VGP: 'listInsiderDealing'
+[2024-08-22T13:28:46.899+0000] {process_utils.py:132} INFO - Sending 15 to group 5996. PIDs of all processes in the group: [5996]
+[2024-08-22T13:28:46.921+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 5996
+[2024-08-22T13:28:47.041+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-08-22T13:28:47.145+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-22T13:28:48.370+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=5996, status='terminated', exitcode=0, started='13:18:14') (5996) terminated with exit code 0

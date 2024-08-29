@@ -1,0 +1,196 @@
+[2024-08-25T07:36:52.908+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:36:52.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T07:36:52.914+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:52.913+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:36:53.934+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:36:54.068+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:54.067+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:36:54.091+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:36:54.090+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T07:36:54.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.229 seconds
+[2024-08-25T07:37:26.079+0000] {processor.py:161} INFO - Started process (PID=322) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:26.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T07:37:26.084+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:26.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:27.793+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:27.852+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:27.850+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:37:27.893+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:27.893+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T07:37:27.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.908 seconds
+[2024-08-25T07:37:58.268+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:58.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T07:37:58.274+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:58.273+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:59.194+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T07:37:59.233+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:59.231+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T07:37:59.270+0000] {logging_mixin.py:188} INFO - [2024-08-25T07:37:59.270+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T07:37:59.310+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.048 seconds
+[2024-08-25T15:16:43.753+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:16:43.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:16:43.757+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:43.757+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:16:44.400+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:16:44.485+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:44.485+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:16:44.494+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:16:44.493+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:16:44.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.765 seconds
+[2024-08-25T15:17:16.971+0000] {processor.py:161} INFO - Started process (PID=317) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:16.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:17:16.977+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:16.976+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:17.529+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:17.548+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:17.548+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:17:17.558+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:17.557+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:17:17.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.617 seconds
+[2024-08-25T15:17:49.569+0000] {processor.py:161} INFO - Started process (PID=413) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:49.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:17:49.572+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:49.572+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:50.096+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:17:50.118+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:50.117+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:17:50.128+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:17:50.128+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:17:50.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.583 seconds
+[2024-08-25T15:18:22.127+0000] {processor.py:161} INFO - Started process (PID=503) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:22.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:18:22.130+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:22.130+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:22.747+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:22.775+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:22.774+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:18:22.787+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:22.787+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:18:22.810+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.687 seconds
+[2024-08-25T15:18:55.088+0000] {processor.py:161} INFO - Started process (PID=611) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:55.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:18:55.090+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:55.090+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:55.644+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:18:55.674+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:55.673+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:18:55.687+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:18:55.687+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:18:55.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.627 seconds
+[2024-08-25T15:19:27.504+0000] {processor.py:161} INFO - Started process (PID=707) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:27.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:19:27.513+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:27.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:28.649+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:28.685+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:28.684+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:19:28.709+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:28.708+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:19:28.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.253 seconds
+[2024-08-25T15:19:59.351+0000] {processor.py:161} INFO - Started process (PID=789) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:59.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:19:59.355+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:59.354+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:59.813+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:19:59.841+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:59.841+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:19:59.855+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:19:59.855+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:19:59.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.530 seconds
+[2024-08-25T15:20:31.080+0000] {processor.py:161} INFO - Started process (PID=887) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:20:31.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:20:31.083+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:31.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:20:31.526+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:20:31.551+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:31.550+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:20:31.561+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:20:31.561+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:20:31.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.505 seconds
+[2024-08-25T15:21:03.102+0000] {processor.py:161} INFO - Started process (PID=969) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:03.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:21:03.105+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:03.105+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:03.596+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:03.626+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:03.626+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:21:03.637+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:03.637+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:21:03.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.559 seconds
+[2024-08-25T15:21:34.252+0000] {processor.py:161} INFO - Started process (PID=1063) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:34.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:21:34.255+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:34.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:34.656+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:21:34.679+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:34.678+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:21:34.688+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:21:34.688+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:21:34.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.461 seconds
+[2024-08-25T15:23:28.274+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:28.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:23:28.278+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:28.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:28.770+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:28.801+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:28.801+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:23:28.816+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:28.816+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:23:28.835+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.572 seconds
+[2024-08-25T15:23:59.280+0000] {processor.py:161} INFO - Started process (PID=1278) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:59.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:23:59.283+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:59.282+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:59.732+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:23:59.757+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:59.756+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:23:59.769+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:23:59.768+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:23:59.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.517 seconds
+[2024-08-25T15:24:31.812+0000] {processor.py:161} INFO - Started process (PID=1375) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:24:31.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:24:31.814+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:31.814+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:24:33.078+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:24:33.279+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:33.278+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:24:33.318+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:24:33.317+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:24:33.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.583 seconds
+[2024-08-25T15:25:05.042+0000] {processor.py:161} INFO - Started process (PID=1460) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:05.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:25:05.044+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:05.044+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:05.690+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:05.728+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:05.728+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:25:05.756+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:05.755+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:25:05.786+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.751 seconds
+[2024-08-25T15:25:37.307+0000] {processor.py:161} INFO - Started process (PID=1554) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:37.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:25:37.309+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:37.309+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:37.801+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:25:37.825+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:37.824+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:25:37.836+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:25:37.836+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:25:37.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.560 seconds
+[2024-08-25T15:26:09.288+0000] {processor.py:161} INFO - Started process (PID=1638) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:09.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:26:09.290+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:09.289+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:09.669+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:09.694+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:09.693+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:26:09.704+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:09.704+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:26:09.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.442 seconds
+[2024-08-25T15:26:41.509+0000] {processor.py:161} INFO - Started process (PID=1735) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:41.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:26:41.512+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:41.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:42.037+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:26:42.059+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:42.059+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:26:42.071+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:26:42.071+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:26:42.088+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.588 seconds
+[2024-08-25T15:27:13.027+0000] {processor.py:161} INFO - Started process (PID=1858) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:13.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:27:13.029+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:13.028+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:13.449+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:13.475+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:13.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:27:13.488+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:13.487+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:27:13.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.488 seconds
+[2024-08-25T15:27:44.969+0000] {processor.py:161} INFO - Started process (PID=1936) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:44.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:27:44.971+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:44.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:45.432+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:27:45.456+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:45.455+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:27:45.466+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:27:45.466+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:27:45.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.519 seconds
+[2024-08-25T15:28:16.437+0000] {processor.py:161} INFO - Started process (PID=2031) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:16.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:28:16.440+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:16.440+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:16.858+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:16.881+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:16.880+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:28:16.891+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:16.891+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:28:16.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.480 seconds
+[2024-08-25T15:28:48.328+0000] {processor.py:161} INFO - Started process (PID=2115) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:48.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:28:48.330+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:48.330+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:48.712+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:28:48.737+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:48.736+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:28:48.746+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:28:48.746+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:28:48.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.444 seconds
+[2024-08-25T15:29:20.397+0000] {processor.py:161} INFO - Started process (PID=2209) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:20.398+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:29:20.399+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:20.398+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:20.871+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:20.896+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:20.895+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:29:20.906+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:20.906+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:29:20.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.532 seconds
+[2024-08-25T15:29:52.062+0000] {processor.py:161} INFO - Started process (PID=2305) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:52.063+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:29:52.065+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:52.065+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:52.679+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:29:52.707+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:52.707+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:29:52.720+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:29:52.719+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:29:52.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.689 seconds
+[2024-08-25T15:31:11.525+0000] {processor.py:161} INFO - Started process (PID=2434) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:11.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:31:11.527+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:11.527+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:12.081+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:12.125+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:12.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:31:12.140+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:12.140+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:31:12.170+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 0.652 seconds
+[2024-08-25T15:31:42.636+0000] {processor.py:161} INFO - Started process (PID=2515) to work on /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:42.638+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_data_into_s3.py for tasks to queue
+[2024-08-25T15:31:42.640+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:42.639+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:43.823+0000] {processor.py:840} INFO - DAG(s) 'csv_to_parquet_minio_no_partition' retrieved from /opt/airflow/dags/load_data_into_s3.py
+[2024-08-25T15:31:43.878+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:43.877+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-08-25T15:31:43.898+0000] {logging_mixin.py:188} INFO - [2024-08-25T15:31:43.898+0000] {dag.py:3947} INFO - Setting next_dagrun for csv_to_parquet_minio_no_partition to None, run_after=None
+[2024-08-25T15:31:43.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_data_into_s3.py took 1.300 seconds

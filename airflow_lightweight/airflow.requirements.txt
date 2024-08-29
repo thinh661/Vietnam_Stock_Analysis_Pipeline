@@ -1,0 +1,11 @@
+pandas
+numpy
+psycopg2-binary
+apache-airflow-providers-amazon
+pyarrow
+vnstock3
+minio
+trino
+s3fs
+apache-airflow-providers-trino
+pyspark

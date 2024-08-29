@@ -1,0 +1,20 @@
+[2024-08-22T12:53:04.898+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-22T12:53:04.934+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_stock_symbols_in_s3_monthly.save_symbols_to_minio manual__2024-08-22T12:52:56.720320+00:00 [queued]>
+[2024-08-22T12:53:04.948+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_stock_symbols_in_s3_monthly.save_symbols_to_minio manual__2024-08-22T12:52:56.720320+00:00 [queued]>
+[2024-08-22T12:53:04.949+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-08-22T12:53:04.968+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): save_symbols_to_minio> on 2024-08-22 12:52:56.720320+00:00
+[2024-08-22T12:53:04.991+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2332) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-08-22T12:53:04.983+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_stock_symbols_in_s3_monthly', 'save_symbols_to_minio', 'manual__2024-08-22T12:52:56.720320+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/load_all_symbol_raw.py', '--cfg-path', '/tmp/tmpeqgntm7r']
+[2024-08-22T12:53:04.998+0000] {standard_task_runner.py:91} INFO - Job 40: Subtask save_symbols_to_minio
+[2024-08-22T12:53:04.998+0000] {standard_task_runner.py:64} INFO - Started process 2349 to run task
+[2024-08-22T12:53:05.123+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-08-22T12:53:05.201+0000] {task_command.py:426} INFO - Running <TaskInstance: update_stock_symbols_in_s3_monthly.save_symbols_to_minio manual__2024-08-22T12:52:56.720320+00:00 [running]> on host fa4e08fee2f6
+[2024-08-22T12:53:05.426+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_stock_symbols_in_s3_monthly' AIRFLOW_CTX_TASK_ID='save_symbols_to_minio' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T12:52:56.720320+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T12:52:56.720320+00:00'
+[2024-08-22T12:53:05.429+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-22T12:53:05.555+0000] {logging_mixin.py:188} INFO - Danh sách mã cổ phiếu đã được lưu thành công.
+[2024-08-22T12:53:05.556+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-22T12:53:05.556+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-22T12:53:05.567+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=update_stock_symbols_in_s3_monthly, task_id=save_symbols_to_minio, run_id=manual__2024-08-22T12:52:56.720320+00:00, execution_date=20240822T125256, start_date=20240822T125304, end_date=20240822T125305
+[2024-08-22T12:53:05.620+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-08-22T12:53:05.638+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-22T12:53:05.641+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
