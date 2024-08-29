@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  superset:
+    image: apache/superset:latest
+    container_name: superset_app
+    restart: unless-stopped
+    ports:
+      - "2509:8088"  # Chuyển tiếp cổng 2509 của máy chủ sang cổng 8088 của container Superset
+    environment:
+      SUPERSET_ENV: production
+      SUPERSET_LOAD_EXAMPLES: "no"
+      SUPERSET_SECRET_KEY: "your_secret_key"
+    volumes:
+      - D:\superset\superset_data:/app/superset_home
+    networks:
+      - trino-network
+
+
+networks:
+  trino-network:
+    external: true
