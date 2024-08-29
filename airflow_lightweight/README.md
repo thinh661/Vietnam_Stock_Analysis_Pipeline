@@ -11,6 +11,10 @@ First, clone my project to local: (If you have already downloaded the repository
 git clone https://github.com/thinh661/airflow_lightweight_docker_env
 ```
 
+Create folder to build the image:
+`mkdir scripts`
+`mkdir plugins`
+
 Build image (for the first build or if you update pakage Python enviroment):
 ``` bash
 docker image build
