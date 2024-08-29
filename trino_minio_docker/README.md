@@ -1,5 +1,9 @@
 # Deploy MinIO and Trino on docker
 
+
+`Warning`: You need to set up MinIO-Trino env for the first. Airflow second and Superset last.
+
+
 ## First, create the trino-network in docker
 ```bash
 docker create network trino-network
@@ -7,7 +11,7 @@ docker create network trino-network
 
 ## Setup MINIO (run in port 9000)
 
-First, clone my project to local:
+First, clone my project to local: (If you have already downloaded the repository containing the three services, there is no need to clone this project. )
 ```bash
 git clone https://github.com/thinh661/minio_trino_docker_evn.git
 ```
@@ -65,3 +69,4 @@ SELECT * FROM minio.iris.iris_parquet LIMIT 5;"
 ```
 
 And you try create schema for `all_stock_data_part_*.parquet` in MINIO by TRINO.
+For the last, because i persist the data in MinIO and Trino. So you can see the data i did in last. You can delete them or do anything about it!
