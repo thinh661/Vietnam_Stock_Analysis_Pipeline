@@ -27,75 +27,79 @@ Welcome to the Vietnam-Stock-Analysis-Pipeline Project. This is a step-by-step p
 8. **Report**
 
 ## Data Pipeline Architechture
-The source dataset for this project is the "HMEQ_dataset", which can be found [here](https://www.kaggle.com/datasets/ajay1735/hmeq-data).
+Below is the data pipeline architecture that I will use to transmit data to the visualization tool for securities data analysis.
+![Data Pipeline](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/pipeline_architecture.png)
+
+Raw data will be collected from the API and saved to MinIO. Next, this raw data will be processed through ETL using Airflow and then saved back to MinIO. Trino will serve as the query engine to retrieve the data after ETL for analysis and visualization using Superset.
+
 
 ## Technologies Used
-- Python (Numpy,Pandas, Matplotlib,...)
-- Sklearn (Build Model)
-- ReactJS (Frontend)
-- Flask (Backend)
+- Data Ingestion: Python and Airflow
+- Data Storage: MinIO and Trino.
+- Data Transformation: Airflow
+- Data Visualization: Superset
+- Enviroment: Docker 
 
-## Getting Started
-To explore and replicate the project, follow these steps:
-1. Clone this repository to your local machine.
-2. Setup the evn for the project (python, matplotlib, pandas, sklearn, ReactJS/Html/Css, Flask)
-3. Follow the instructions in the respective folders for each project phase (EDA, Pre-processing, Build Model, Deploy) to set up and execute the code.
-
-## EDA Phase
-The steps of EDA: 
-- Summary (shape, describe,)
-- Check null, Outliner
-- Distribution
-- Data trend
-- Correlation and Skewness
+For the first, i use the Python and Airflow to ingestion data because Python is ez for use and Airflow is open source. So MinIO-Trino is object storage and it has configuration and features similar to AWS S3. That will make my project change to easily integrate and deploy in the cloud environment. Superset is also open source and we can delve into the source code and make flexible adjustments according to the project's requirements. Additionally, it is free compared to commercial versions like Power BI or Tableau.
 
 
-![EDA](https://github.com/thinh661/Credit_Score_Webapp/blob/master/image/eda.png)
-    
-And specifically about the source code in [here](https://github.com/thinh661/Credit_Score_Webapp/blob/master/EDA_hmeq.ipynb).
+## Crawl Data
+Data is used in this project is basic data from Vietnam stock exchange and I will collect it through API from two stock exchanges, TCBS and VCI provided by VNSTock3.
 
-## Pre-processing Phase
-The steps of Pre-processing:
-- Handling missing data
-- Handling outliner
-- Handling imbalance data (Can't do it)
-- Normalization (Scaling)
-- Reduction
-    - PCA
-    - Feature Selection
-    - Feature Selection + PCA
-- Test datasets with various models to find the best stable dataset.
+Specifically it will be instructed in the file `crawl_data.ipynb` in this repo.
 
+## Setup Enviroment
+I'll setup 3 service:
+ - MinIO-Trino in docker
+ - Airflow_lightweight in docker
+ - Superset in docker
 
-![preprocessing](https://github.com/thinh661/Credit_Score_Webapp/blob/master/image/preprocessing.png)
+And they are in 3 corresponding folders in this project.
 
-Specifically about the source code in [here](https://github.com/thinh661/Credit_Score_Webapp/blob/master/Preprocessing_hmeq.ipynb).
+You can see the specific installation guide in the readme of each of these folders.
 
 
-## Model Phase
-Build models with 4 main machine learning algorithms:
-- Random Forest
-- Decision Tree
-- SVM
-- KNN
+## Design Storage Architechture
+Next, I will present how I have designed the securities data storage system to optimize both query performance and long-term data storage, while also supporting future system expansion.
 
-and tunning them for best validataion.
+![Storage Architechture](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/minio_storage_architechtire.png)
+
+1. I intend to split the storage into two zones: Raw Zone and Processed Zone. This approach will clearly separate data processing stages and facilitate easier maintenance and scalability.
+2. The special aspect here is due to the data zoning issue in MinIO and filtering during the ETL process. Therefore, I decided to store the data in two separate buckets: one for daily price data and one for hourly price data. These two buckets will serve as the interface between the two data zone.
 
 
-![model_build](https://github.com/thinh661/Credit_Score_Webapp/blob/master/image/model_acc.png)
+## ETL
+After designing the storage system, I will perform the ETL process using Airflow to clean the data for analysis and visualization. Initially, the data will be collected and stored in the raw data area using the buckets I created during the storage design phase. Then, the daily and hourly stock price data from the raw data area will be extracted, cleaned, and stored back in MinIO.
 
-Specifically about the source code in this file and 4 models are saved in [here](https://github.com/thinh661/Credit_Score_Webapp/blob/master/build_model.ipynb).
+Due to the data storage design, I will divide the data into master data and transaction data. The ETL process using Airflow will be illustrated with the following visualizations:
 
-## Deploy Phase
-* In this phase, I'll build the Web Application for end users:
-    * The frontend is built using the ReactJS framework.
-    * GUI:
-        ![GUI](https://github.com/thinh661/Credit_Score_Webapp/blob/master/image/GUI.png)
-    * The backend is built using the Flask framework by writing RESTful APIs.
-    * To test the api working properly, use the postman
-        ![Postman](https://github.com/thinh661/Credit_Score_Webapp/blob/master/image/postman_test.png)
+![ETL1](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/ETL1.png)
+![ETL2](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/ETL2.png)
+![ETL3](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/ETL3.png)
+![ETL4](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/ETL4.png)
+
+And the WebUI Airflow for DAGs:
+![airflow_img](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/airflow_webUI.png)
+
+You can see and develop DAGs in folder dags in airflow_lightweight folder.
+
+## Visualization
+
+Finally, after cleaning the data, I will use Trino as the query engine to retrieve the data and feed it into Superset for building dashboards to analyze market trends.
+![dashboard1](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/dashboard_1.png)
+![dashboard2](https://github.com/thinh661/Vietnam_Stock_Analysis_Pipeline/blob/master/image/dashboard_2.png)
+
+
+Currently, my outputs include:
+- Top-performing stocks by year.
+- Top-performing stocks by month.
+- Stable stocks by year.
+- Comparison with the market at the same time.
+- Price and volume charts by day and hour...
 
 ## Report
+Due to personal copyright reasons, I have a detailed technical report of the project. If you would like to review it, please contact me via email at `thinh1.work@gmail.com`.
 
+Thank you very much!
 ---
 
